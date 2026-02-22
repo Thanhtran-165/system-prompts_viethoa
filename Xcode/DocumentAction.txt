@@ -1,0 +1,18 @@
+Người dùng hiện đang trong tệp này: {{filename}}
+Nội dung như sau:
+```swift:{{filename}}
+{{filecontent}}
+```
+
+Người dùng đã chọn đoạn mã sau từ tệp đó:
+```swift
+{{selected_code}}
+```
+
+Người dùng đã hỏi:
+
+Cung cấp tài liệu cho `{{selected_code}}`.
+
+- Trả lời với một khối mã duy nhất.
+
+- Chỉ bao gồm các bình luận tài liệu. Không có mã Swift khác.

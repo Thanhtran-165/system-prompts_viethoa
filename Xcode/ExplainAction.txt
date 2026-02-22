@@ -1,0 +1,14 @@
+Người dùng hiện đang trong tệp này: {{filename}}
+Nội dung như sau:
+```swift:{{filename}}
+{{filecontent}}
+```
+
+Người dùng đã chọn đoạn mã sau từ tệp đó:
+```swift
+{{selected}}
+```
+
+Người dùng đã hỏi:
+
+Giải thích điều này cho tôi.

@@ -1,0 +1,221 @@
+{
+  "todo_write": {
+    "description": "Sử dụng công cụ này để tạo và quản lý danh sách nhiệm vụ có cấu trúc cho phiên lập trình hiện tại của bạn. Điều này giúp bạn theo dõi tiến trình, tổ chức các nhiệm vụ phức tạp và thể hiện sự tỉ mỉ cho người dùng. Nó cũng giúp người dùng hiểu tiến trình của nhiệm vụ và tiến trình tổng thể của các yêu cầu của họ.",
+    "params": {
+      "type": "object",
+      "properties": {
+        "todos": {
+          "description": "Danh sách việc cần làm được cập nhật",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "content": {"type": "string"},
+              "status": {"type": "string", "enum": ["pending", "in_progress", "completed"]},
+              "id": {"type": "string"},
+              "priority": {"type": "string", "enum": ["high", "medium", "low"]}
+            },
+            "required": ["content", "status", "id", "priority"],
+            "minItems": 3,
+            "maxItems": 10
+          }
+        }
+      },
+      "required": ["todos"]
+    }
+  },
+  "search_codebase": {
+    "description": "Công cụ này là công cụ ngữ cảnh của Trae. Nó: 1. Nhận mô tả ngôn ngữ tự nhiên của mã bạn đang tìm kiếm; 2. Sử dụng bộ mô hình truy xuất/phụ thuộc độc quyền tạo ra chất lượng thu hồi cao nhất của các đoạn mã có liên quan từ trên toàn bộ codebase; 3. Duy trì chỉ mục thời gian thực của codebase, vì vậy kết quả luôn cập nhật và phản ánh trạng thái hiện tại của codebase; 4. Có thể truy xuất qua các ngôn ngữ lập trình khác nhau; 5. Chỉ phản ánh trạng thái hiện tại của codebase trên đĩa, và không có thông tin về kiểm soát phiên bản hoặc lịch sử mã.",
+    "params": {
+      "type": "object",
+      "properties": {
+        "information_request": {"type": "string"},
+        "target_directories": {"type": "array", "items": {"type": "string"}}
+      },
+      "required": ["information_request"]
+    }
+  },
+  "search_by_regex": {
+    "description": "Tìm kiếm văn bản nhanh tìm thấy các kết quả khớp mẫu chính xác trong các tệp hoặc thư mục, sử dụng lệnh ripgrep để tìm kiếm hiệu quả.",
+    "params": {
+      "type": "object",
+      "properties": {
+        "query": {"type": "string"},
+        "search_directory": {"type": "string"}
+      },
+      "required": ["query"]
+    }
+  },
+  "view_files": {
+    "description": "Xem lên đến 3 tệp cùng một lúc theo chế độ hàng loạt để thu thập thông tin nhanh hơn.",
+    "params": {
+      "type": "object",
+      "properties": {
+        "files": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "file_path": {"type": "string"},
+              "start_line_one_indexed": {"type": "integer"},
+              "end_line_one_indexed_inclusive": {"type": "integer"},
+              "read_entire_file": {"type": "boolean"}
+            },
+            "required": ["file_path", "start_line_one_indexed", "end_line_one_indexed_inclusive"]
+          }
+        }
+      },
+      "required": ["files"]
+    }
+  },
+  "list_dir": {
+    "description": "Bạn có thể sử dụng công cụ này để xem các tệp của thư mục được chỉ định.",
+    "params": {
+      "type": "object",
+      "properties": {
+        "dir_path": {"type": "string"},
+        "max_depth": {"type": "integer", "default": 3}
+      },
+      "required": ["dir_path"]
+    }
+  },
+  "write_to_file": {
+    "description": "Bạn có thể sử dụng công cụ này để viết nội dung vào một tệp với kiểm soát chính xác trên hành vi tạo/ghi lại.",
+    "params": {
+      "type": "object",
+      "properties": {
+        "rewrite": {"type": "boolean"},
+        "file_path": {"type": "string"},
+        "content": {"type": "string"}
+      },
+      "required": ["rewrite", "file_path", "content"]
+    }
+  },
+  "update_file": {
+    "description": "Bạn có thể sử dụng công cụ này để chỉnh sửa tệp, nếu bạn nghĩ rằng sử dụng công cụ này hiệu quả hơn về chi phí so với các công cụ chỉnh sửa khác có sẵn, bạn nên chọn công cụ này, nếu không bạn nên chọn các công cụ chỉnh sửa khác có sẵn.",
+    "params": {
+      "type": "object",
+      "properties": {
+        "file_path": {"type": "string"},
+        "replace_blocks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "old_str": {"type": "string"},
+              "new_str": {"type": "string"}
+            },
+            "required": ["old_str", "new_str"]
+          }
+        }
+      },
+      "required": ["file_path", "replace_blocks"]
+    }
+  },
+  "edit_file_fast_apply": {
+    "description": "Bạn có thể sử dụng công cụ này để chỉnh sửa một tệp hiện có với ít hơn 1000 dòng mã, và bạn nên làm theo các quy tắc này:",
+    "params": {
+      "type": "object",
+      "properties": {
+        "file_path": {"type": "string"},
+        "content": {"type": "string"},
+        "instruction": {"type": "string", "default": ""},
+        "code_language": {"type": "string"}
+      },
+      "required": ["file_path", "content"]
+    }
+  },
+  "rename_file": {
+    "description": "Bạn có thể sử dụng công cụ này để di chuyển hoặc đổi tên một tệp hiện có.",
+    "params": {
+      "type": "object",
+      "properties": {
+        "file_path": {"type": "string"},
+        "rename_file_path": {"type": "string"}
+      },
+      "required": ["file_path", "rename_file_path"]
+    }
+  },
+  "delete_file": {
+    "description": "Bạn có thể sử dụng công cụ này để xóa các tệp, bạn có thể xóa nhiều tệp trong một toolcall, và bạn BẮT BUỘC đảm bảo các tệp tồn tại trước khi xóa.",
+    "params": {
+      "type": "object",
+      "properties": {
+        "file_paths": {"type": "array", "items": {"type": "string"}}
+      },
+      "required": ["file_paths"]
+    }
+  },
+  "run_command": {
+    "description": "Bạn có thể sử dụng công cụ này để ĐỀ XUẤT một lệnh để chạy thay mặt người dùng.",
+    "params": {
+      "type": "object",
+      "properties": {
+        "command": {"type": "string"},
+        "target_terminal": {"type": "string"},
+        "command_type": {"type": "string"},
+        "cwd": {"type": "string"},
+        "blocking": {"type": "boolean"},
+        "wait_ms_before_async": {"type": "integer", "minimum": 0},
+        "requires_approval": {"type": "boolean"}
+      },
+      "required": ["command", "blocking", "requires_approval"]
+    }
+  },
+  "check_command_status": {
+    "description": "Bạn có thể sử dụng công cụ này để nhận trạng thái của một lệnh đã thực hiện trước đó bằng ID Lệnh của nó (lệnh không chặn).",
+    "params": {
+      "type": "object",
+      "properties": {
+        "command_id": {"type": "string"},
+        "wait_ms_before_check": {"type": "integer"},
+        "output_character_count": {"type": "integer", "minimum": 0, "default": 1000},
+        "skip_character_count": {"type": "integer", "minimum": 0, "default": 0},
+        "output_priority": {"type": "string", "default": "bottom"}
+      }
+    }
+  },
+  "stop_command": {
+    "description": "Công cụ này cho phép bạn chấm dứt một lệnh hiện đang chạy (lệnh PHẢI là lệnh đã thực hiện trước đó).",
+    "params": {
+      "type": "object",
+      "properties": {
+        "command_id": {"type": "string"}
+      },
+      "required": ["command_id"]
+    }
+  },
+  "open_preview": {
+    "description": "Bạn có thể sử dụng công cụ này để hiển thị URL xem trước có sẵn cho người dùng nếu bạn đã khởi động máy chủ cục bộ thành công trong một toolcall trước đó, mà người dùng có thể mở nó trong trình duyệt.",
+    "params": {
+      "type": "object",
+      "properties": {
+        "preview_url": {"type": "string"},
+        "command_id": {"type": "string"}
+      },
+      "required": ["preview_url", "command_id"]
+    }
+  },
+  "web_search": {
+    "description": "Công cụ này có thể được sử dụng để tìm kiếm internet, nên được sử dụng một cách thận trọng, vì các tìm kiếm thường xuyên dẫn đến trải nghiệm người dùng kém và chi phí quá mức.",
+    "params": {
+      "type": "object",
+      "properties": {
+        "query": {"type": "string"},
+        "num": {"type": "int32", "default": 5},
+        "lr": {"type": "string"}
+      },
+      "required": ["query"]
+    }
+  },
+  "finish": {
+    "description": "Công cụ cuối cùng của phiên này, khi bạn nghĩ rằng bạn đã đạt được mục tiêu của yêu cầu người dùng, bạn nên sử dụng công cụ này để đánh dấu là hoàn thành.",
+    "params": {
+      "type": "object",
+      "properties": {
+        "summary": {"type": "string"}
+      },
+      "required": ["summary"]
+    }
+  }
+}

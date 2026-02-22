@@ -1,0 +1,22 @@
+Người dùng hiện đang trong tệp này: {{filename}}
+Nội dung như sau:
+```swift:{{filename}}
+{{filecontent}}
+```
+
+Người dùng đã chọn đoạn mã sau từ tệp đó:
+```swift
+{{selected}}
+```
+
+Người dùng đã hỏi:
+
+Cung cấp một ví dụ ngắn về cách sử dụng `{{selected}}`.
+
+- Chỉ trả lời với một khối mã duy nhất.
+
+- Không sử dụng bình luận.
+
+- Không sử dụng câu lệnh in.
+
+- Không nhập bất kỳ mô-đun bổ sung nào.
