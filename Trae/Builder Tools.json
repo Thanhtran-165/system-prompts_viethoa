@@ -1,11 +1,11 @@
 {
   "todo_write": {
-    "description": "Sử dụng công cụ này để tạo và quản lý danh sách nhiệm vụ có cấu trúc cho phiên lập trình hiện tại của bạn. Điều này giúp bạn theo dõi tiến trình, tổ chức các nhiệm vụ phức tạp và thể hiện sự tỉ mỉ cho người dùng. Nó cũng giúp người dùng hiểu tiến trình của nhiệm vụ và tiến trình tổng thể của các yêu cầu của họ.",
+    "description": "Use this tool to create and manage a structured task list for your current coding session. This helps you track progress, organize complex tasks, and demonstrate thoroughness to the user. It also helps the user understand the progress of the task and overall progress of their requests.",
     "params": {
       "type": "object",
       "properties": {
         "todos": {
-          "description": "Danh sách việc cần làm được cập nhật",
+          "description": "The updated todo list",
           "type": "array",
           "items": {
             "type": "object",
@@ -25,7 +25,7 @@
     }
   },
   "search_codebase": {
-    "description": "Công cụ này là công cụ ngữ cảnh của Trae. Nó: 1. Nhận mô tả ngôn ngữ tự nhiên của mã bạn đang tìm kiếm; 2. Sử dụng bộ mô hình truy xuất/phụ thuộc độc quyền tạo ra chất lượng thu hồi cao nhất của các đoạn mã có liên quan từ trên toàn bộ codebase; 3. Duy trì chỉ mục thời gian thực của codebase, vì vậy kết quả luôn cập nhật và phản ánh trạng thái hiện tại của codebase; 4. Có thể truy xuất qua các ngôn ngữ lập trình khác nhau; 5. Chỉ phản ánh trạng thái hiện tại của codebase trên đĩa, và không có thông tin về kiểm soát phiên bản hoặc lịch sử mã.",
+    "description": "This tool is Trae's context engine. It: 1. Takes in a natural language description of the code you are looking for; 2. Uses a proprietary retrieval/embedding model suite that produces the highest-quality recall of relevant code snippets from across the codebase; 3. Maintains a real-time index of the codebase, so the results are always up-to-date and reflects the current state of the codebase; 4. Can retrieve across different programming languages; 5. Only reflects the current state of the codebase on the disk, and has no information on version control or code history.",
     "params": {
       "type": "object",
       "properties": {
@@ -36,7 +36,7 @@
     }
   },
   "search_by_regex": {
-    "description": "Tìm kiếm văn bản nhanh tìm thấy các kết quả khớp mẫu chính xác trong các tệp hoặc thư mục, sử dụng lệnh ripgrep để tìm kiếm hiệu quả.",
+    "description": "Fast text-based search that finds exact pattern matches within files or directories, utilizing the ripgrep command for efficient searching.",
     "params": {
       "type": "object",
       "properties": {
@@ -47,7 +47,7 @@
     }
   },
   "view_files": {
-    "description": "Xem lên đến 3 tệp cùng một lúc theo chế độ hàng loạt để thu thập thông tin nhanh hơn.",
+    "description": "View up to 3 files simultaneously in batch mode for faster information gathering.",
     "params": {
       "type": "object",
       "properties": {
@@ -69,7 +69,7 @@
     }
   },
   "list_dir": {
-    "description": "Bạn có thể sử dụng công cụ này để xem các tệp của thư mục được chỉ định.",
+    "description": "You can use this tool to view files of the specified directory.",
     "params": {
       "type": "object",
       "properties": {
@@ -80,7 +80,7 @@
     }
   },
   "write_to_file": {
-    "description": "Bạn có thể sử dụng công cụ này để viết nội dung vào một tệp với kiểm soát chính xác trên hành vi tạo/ghi lại.",
+    "description": "You can use this tool to write content to a file with precise control over creation/rewrite behavior.",
     "params": {
       "type": "object",
       "properties": {
@@ -92,7 +92,7 @@
     }
   },
   "update_file": {
-    "description": "Bạn có thể sử dụng công cụ này để chỉnh sửa tệp, nếu bạn nghĩ rằng sử dụng công cụ này hiệu quả hơn về chi phí so với các công cụ chỉnh sửa khác có sẵn, bạn nên chọn công cụ này, nếu không bạn nên chọn các công cụ chỉnh sửa khác có sẵn.",
+    "description": "You can use this tool to edit file, if you think that using this tool is more cost-effective than other available editing tools, you should choose this tool, otherwise you should choose other available edit tools.",
     "params": {
       "type": "object",
       "properties": {
@@ -113,7 +113,7 @@
     }
   },
   "edit_file_fast_apply": {
-    "description": "Bạn có thể sử dụng công cụ này để chỉnh sửa một tệp hiện có với ít hơn 1000 dòng mã, và bạn nên làm theo các quy tắc này:",
+    "description": "You can use this tool to edit an existing files with less than 1000 lines of code, and you should follow these rules:",
     "params": {
       "type": "object",
       "properties": {
@@ -126,7 +126,7 @@
     }
   },
   "rename_file": {
-    "description": "Bạn có thể sử dụng công cụ này để di chuyển hoặc đổi tên một tệp hiện có.",
+    "description": "You can use this tool to move or rename an existing file.",
     "params": {
       "type": "object",
       "properties": {
@@ -137,7 +137,7 @@
     }
   },
   "delete_file": {
-    "description": "Bạn có thể sử dụng công cụ này để xóa các tệp, bạn có thể xóa nhiều tệp trong một toolcall, và bạn BẮT BUỘC đảm bảo các tệp tồn tại trước khi xóa.",
+    "description": "You can use this tool to delete files, you can delete multi files in one toolcall, and you MUST make sure the files is exist before deleting.",
     "params": {
       "type": "object",
       "properties": {
@@ -147,7 +147,7 @@
     }
   },
   "run_command": {
-    "description": "Bạn có thể sử dụng công cụ này để ĐỀ XUẤT một lệnh để chạy thay mặt người dùng.",
+    "description": "You can use this tool to PROPOSE a command to run on behalf of the user.",
     "params": {
       "type": "object",
       "properties": {
@@ -163,7 +163,7 @@
     }
   },
   "check_command_status": {
-    "description": "Bạn có thể sử dụng công cụ này để nhận trạng thái của một lệnh đã thực hiện trước đó bằng ID Lệnh của nó (lệnh không chặn).",
+    "description": "You can use this tool to get the status of a previously executed command by its Command ID ( non-blocking command ).",
     "params": {
       "type": "object",
       "properties": {
@@ -176,7 +176,7 @@
     }
   },
   "stop_command": {
-    "description": "Công cụ này cho phép bạn chấm dứt một lệnh hiện đang chạy (lệnh PHẢI là lệnh đã thực hiện trước đó).",
+    "description": "This tool allows you to terminate a currently running command( the command MUST be previously executed command. ).",
     "params": {
       "type": "object",
       "properties": {
@@ -186,7 +186,7 @@
     }
   },
   "open_preview": {
-    "description": "Bạn có thể sử dụng công cụ này để hiển thị URL xem trước có sẵn cho người dùng nếu bạn đã khởi động máy chủ cục bộ thành công trong một toolcall trước đó, mà người dùng có thể mở nó trong trình duyệt.",
+    "description": "You can use this tool to show the available preview URL to user if you have started a local server successfully in a previous toolcall, which user can open it in the browser.",
     "params": {
       "type": "object",
       "properties": {
@@ -197,7 +197,7 @@
     }
   },
   "web_search": {
-    "description": "Công cụ này có thể được sử dụng để tìm kiếm internet, nên được sử dụng một cách thận trọng, vì các tìm kiếm thường xuyên dẫn đến trải nghiệm người dùng kém và chi phí quá mức.",
+    "description": "This tool can be used to search the internet, which should be used with caution, as frequent searches result in a bad user experience and excessive costs.",
     "params": {
       "type": "object",
       "properties": {
@@ -209,7 +209,7 @@
     }
   },
   "finish": {
-    "description": "Công cụ cuối cùng của phiên này, khi bạn nghĩ rằng bạn đã đạt được mục tiêu của yêu cầu người dùng, bạn nên sử dụng công cụ này để đánh dấu là hoàn thành.",
+    "description": "The final tool of this session, when you think you have archived the goal of user requirement, you should use this tool to mark it as finish.",
     "params": {
       "type": "object",
       "properties": {

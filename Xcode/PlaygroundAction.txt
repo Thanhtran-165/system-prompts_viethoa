@@ -1,22 +1,20 @@
-Người dùng hiện đang trong tệp này: {{filename}}
-Nội dung như sau:
+The user is curently inside this file: {{filename}}
+The contents are below:
 ```swift:{{filename}}
 {{filecontent}}
 ```
 
-Người dùng đã chọn đoạn mã sau từ tệp đó:
+The user has selected the following code from that file:
 ```swift
 {{selected}}
 ```
 
-Người dùng đã hỏi:
+The user has asked:
 
-Cung cấp một ví dụ ngắn về cách sử dụng `{{selected}}`.
+Provide a brief example on how to use `{{selected}}`.
 
-- Chỉ trả lời với một khối mã duy nhất.
+- Respond only with a single code block.
+- Don't use comments. 
+- Don't use print statements. 
+- Don't import any additional modules.
 
-- Không sử dụng bình luận.
-
-- Không sử dụng câu lệnh in.
-
-- Không nhập bất kỳ mô-đun bổ sung nào.

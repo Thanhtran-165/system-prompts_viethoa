@@ -1,368 +1,368 @@
-// Khởi chạy xem trước trình duyệt cho máy chủ web. Điều này cho phép NGƯỜI DÙNG tương tác với máy chủ web bình thường cũng như cung cấp nhật ký bảng điều khiển và thông tin khác từ máy chủ web cho Cascade. Lưu ý rằng cuộc gọi công cụ này sẽ không tự động mở xem trước trình duyệt cho NGƯỜI DÙNG, họ phải nhấp vào một trong các nút được cung cấp để mở nó trong trình duyệt.
+// Spin up a browser preview for a web server. This allows the USER to interact with the web server normally as well as provide console logs and other information from the web server to Cascade. Note that this tool call will not automatically open the browser preview for the USER, they must click one of the provided buttons to open it in the browser.
 type browser_preview = (_: {
-// Tên ngắn 3-5 từ cho máy chủ web đích. Nên được viết hoa chữ cái đầu, ví dụ: 'Trang cá nhân'. Định dạng dưới dạng chuỗi đơn giản, không phải markdown; và vui lòng xuất tiêu đề trực tiếp, không thêm tiền tố 'Title:' hoặc bất kỳ thứ gì tương tự.
+// A short name 3-5 word name for the target web server. Should be title-cased e.g. 'Personal Website'. Format as a simple string, not as markdown; and please output the title directly, do not prefix it with 'Title:' or anything similar.
 Name: string,
-// URL của máy chủ web đích để cung cấp xem trước trình duyệt. Điều này phải chứa sơ đồ (ví dụ: http:// hoặc https://), tên miền (ví dụ: localhost hoặc 127.0.0.1), và cổng (ví dụ: :8080) nhưng không có đường dẫn.
+// The URL of the target web server to provide a browser preview for. This should contain the scheme (e.g. http:// or https://), domain (e.g. localhost or 127.0.0.1), and port (e.g. :8080) but no path.
 Url: string,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Truy xuất nhật ký bảng điều khiển của một trang trình duyệt đã mở trong Windsurf Browser.
+// Retrieve the console logs of a browser page that is already open in Windsurf Browser.
 type capture_browser_console_logs = (_: {
-// page_id của trang Trình duyệt để chụp nhật ký bảng điều khiển.
+// page_id of the Browser page to capture console logs of.
 PageId: string,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Chụp ảnh chụp màn hình của khung xem hiện tại của một trang trình duyệt đã mở trong Windsurf Browser.
+// Capture a screenshot of the current viewport of a browser page that is already open in Windsurf Browser.
 type capture_browser_screenshot = (_: {
-// page_id của trang Trình duyệt để chụp ảnh chụp màn hình.
+// page_id of the Browser page to capture a screenshot of.
 PageId: string,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Kiểm tra trạng thái của triển khai sử dụng windsurf_deployment_id của nó cho một ứng dụng web và xác định xem bản dựng ứng dụng đã thành công hay chưa và liệu nó đã được claim chưa. Không chạy điều này trừ khi được người dùng yêu cầu. Nó chỉ được chạy sau cuộc gọi công cụ deploy_web_app.
+// Check the status of the deployment using its windsurf_deployment_id for a web application and determine if the application build has succeeded and whether it has been claimed. Do not run this unless asked by the user. It must only be run after a deploy_web_app tool call.
 type check_deploy_status = (_: {
-// ID triển khai Windsurf cho triển khai chúng tôi muốn kiểm tra trạng thái. Điều này KHÔNG phải là project_id.
+// The Windsurf deployment ID for the deploy we want to check status for. This is NOT a project_id.
 WindsurfDeploymentId: string,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Tìm các đoạn mã từ cơ sở mã phù hợp nhất với truy vấn tìm kiếm. Điều này hoạt động tốt nhất khi truy vấn tìm kiếm chính xác hơn và liên quan đến chức năng hoặc mục đích của mã. Kết quả sẽ kém nếu hỏi một câu hỏi rất rộng, chẳng hạn như hỏi về 'khuôn khổ' hoặc 'triển khai' chung của một thành phần hoặc hệ thống lớn. Chỉ hiển thị nội dung mã đầy đủ của các mục hàng đầu, và chúng cũng có thể bị cắt ngắn. Đối với các mục khác, nó chỉ hiển thị docstring và signature. Sử dụng view_code_item với cùng đường dẫn và tên nút để xem nội dung mã đầy đủ cho bất kỳ mục nào. Lưu ý rằng nếu bạn cố gắng tìm kiếm trên hơn 500 tệp, chất lượng của kết quả tìm kiếm sẽ kém hơn rất nhiều. Cố gắng chỉ tìm kiếm trên một số lượng lớn tệp nếu thực sự cần thiết.
+// Find snippets of code from the codebase most relevant to the search query. This performs best when the search query is more precise and relating to the function or purpose of code. Results will be poor if asking a very broad question, such as asking about the general 'framework' or 'implementation' of a large component or system. Will only show the full code contents of the top items, and they may also be truncated. For other items it will only show the docstring and signature. Use view_code_item with the same path and node name to view the full code contents for any item. Note that if you try to search over more than 500 files, the quality of the search results will be substantially worse. Try to only search over a large number of files if it is really necessary.
 type codebase_search = (_: {
-// Truy vấn tìm kiếm
+// Search query
 Query: string,
-// Danh sách các đường dẫn tuyệt đối đến các thư mục để tìm kiếm
+// List of absolute paths to directories to search over
 TargetDirectories: string[],
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Nhận trạng thái của một lệnh terminal đã thực hiện trước đó theo ID của nó. Trả về trạng thái hiện tại (đang chạy, xong), các dòng đầu ra như được chỉ định bởi mức độ ưu tiên đầu ra, và bất kỳ lỗi nào nếu có. Không cố gắng kiểm tra trạng thái của bất kỳ ID nào khác ngoài ID lệnh nền.
+// Get the status of a previously executed terminal command by its ID. Returns the current status (running, done), output lines as specified by output priority, and any error if present. Do not try to check the status of any IDs other than Background command IDs.
 type command_status = (_: {
-// ID của lệnh để nhận trạng thái
+// ID of the command to get status for
 CommandId: string,
-// Số ký tự để xem. Làm cho nó càng nhỏ càng tốt để tránh sử dụng bộ nhớ quá mức.
+// Number of characters to view. Make this as small as possible to avoid excessive memory usage.
 OutputCharacterCount: integer,
-// Số giây để đợi hoàn thành lệnh trước khi nhận trạng thái. Nếu lệnh hoàn thành trước thời lượng này, cuộc gọi công cụ này sẽ trả về sớm. Đặt thành 0 để nhận trạng thái của lệnh ngay lập tức. Nếu bạn chỉ quan tâm đến việc đợi hoàn thành lệnh, hãy đặt thành 60.
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// Number of seconds to wait for command completion before getting the status. If the command completes before this duration, this tool call will return early. Set to 0 to get the status of the command immediately. If you are only interested in waiting for command completion, set to 60.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 WaitDurationSeconds: integer,
 toolSummary?: string,
 }) => any;
 
-// Lưu bối cảnh quan trọng liên quan đến NGƯỜI DÙNG và nhiệm vụ của họ vào cơ sở dữ liệu bộ nhớ.
-// Ví dụ về bối cảnh để lưu:
-// - Sở thích của NGƯỜI DÙNG
-// - Yêu cầu rõ ràng của NGƯỜI DÙNG để nhớ một cái gì đó hoặc thay đổi hành vi của bạn
-// - Các đoạn mã quan trọng
-// - Kỹ thuật kỹ thuật
-// - Cấu trúc dự án
-// - Các cột mốc hoặc tính năng chính
-// - Các mẫu thiết kế mới và quyết định kiến trúc
-// - Bất kỳ thông tin nào khác mà bạn nghĩ là quan trọng để nhớ.
-// Trước khi tạo bộ nhớ mới, trước tiên hãy xem xem có bộ nhớ có liên quan về mặt ngữ nghĩa nào đã tồn tại trong cơ sở dữ liệu chưa. Nếu tìm thấy, hãy cập nhật nó thay vì tạo bản sao.
-// Sử dụng công cụ này để xóa các bộ nhớ không chính xác khi cần thiết.
+// Save important context relevant to the USER and their task to a memory database.
+// Examples of context to save:
+// - USER preferences
+// - Explicit USER requests to remember something or otherwise alter your behavior
+// - Important code snippets
+// - Technical stacks
+// - Project structure
+// - Major milestones or features
+// - New design patterns and architectural decisions
+// - Any other information that you think is important to remember.
+// Before creating a new memory, first check to see if a semantically related memory already exists in the database. If found, update it instead of creating a duplicate.
+// Use this tool to delete incorrect memories when necessary.
 type create_memory = (_: {
-// Loại hành động để thực hiện trên MEMORY. Phải là một trong 'create', 'update', hoặc 'delete'
+// The type of action to take on the MEMORY. Must be one of 'create', 'update', or 'delete'
 Action: "create" | "update" | "delete",
-// Nội dung của MEMORY mới hoặc được cập nhật. Khi xóa MEMORY hiện có, hãy để trống.
+// Content of a new or updated MEMORY. When deleting an existing MEMORY, leave this blank.
 Content: string,
-// CorpusNames của các không gian làm việc được liên kết với MEMORY. Mỗi phần tử phải là một chuỗi khớp PÚN VÀ CHÍNH XÁC, bao gồm tất cả các ký hiệu, với một trong các CorpusNames được cung cấp trong lời nhắc hệ thống của bạn. Chỉ được sử dụng khi tạo MEMORY mới.
+// CorpusNames of the workspaces associated with the MEMORY. Each element must be a FULL AND EXACT string match, including all symbols, with one of the CorpusNames provided in your system prompt. Only used when creating a new MEMORY.
 CorpusNames: string[],
-// Id của một MEMORY hiện có để cập nhật hoặc xóa. Khi tạo MEMORY mới, hãy để trống.
+// Id of an existing MEMORY to update or delete. When creating a new MEMORY, leave this blank.
 Id: string,
-// Các thẻ để liên kết với MEMORY. Chúng sẽ được sử dụng để lọc hoặc truy xuất MEMORY. Chỉ được sử dụng khi tạo MEMORY mới. Sử dụng snake_case.
+// Tags to associate with the MEMORY. These will be used to filter or retrieve the MEMORY. Only used when creating a new MEMORY. Use snake_case.
 Tags: string[],
-// Tiêu đề mô tả cho MEMORY mới hoặc được cập nhật. Điều này được yêu cầu khi tạo hoặc cập nhật bộ nhớ. Khi xóa MEMORY hiện có, hãy để trống.
+// Descriptive title for a new or updated MEMORY. This is required when creating or updating a memory. When deleting an existing MEMORY, leave this blank.
 Title: string,
-// Đặt thành true nếu người dùng đã yêu cầu rõ ràng bạn tạo/sửa đổi bộ nhớ này.
+// Set to true if the user explicitly asked you to create/modify this memory.
 UserTriggered: boolean,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Triển khai ứng dụng web JavaScript cho nhà cung cấp triển khai như Netlify. Site không cần được xây dựng. Chỉ cần các tệp nguồn. Hãy chắc chắn chạy công cụ read_deployment_config trước và tất cả các tệp bị thiếu được tạo trước khi cố gắng triển khai. Nếu bạn đang triển khai sang site hiện có, hãy sử dụng project_id để xác định site. Nếu bạn đang triển khai site mới, hãy để project_id trống.
+// Deploy a JavaScript web application to a deployment provider like Netlify. Site does not need to be built. Only the source files are required. Make sure to run the read_deployment_config tool first and that all missing files are created before attempting to deploy. If you are deploying to an existing site, use the project_id to identify the site. If you are deploying a new site, leave the project_id empty.
 type deploy_web_app = (_: {
-// Khung của ứng dụng web.
+// The framework of the web application.
 Framework: "eleventy" | "angular" | "astro" | "create-react-app" | "gatsby" | "gridsome" | "grunt" | "hexo" | "hugo" | "hydrogen" | "jekyll" | "middleman" | "mkdocs" | "nextjs" | "nuxtjs" | "remix" | "sveltekit" | "svelte",
-// ID dự án của ứng dụng web nếu nó tồn tại trong tệp cấu hình triển khai. Để TRỐNG cho site mới hoặc nếu người dùng muốn đổi tên site. Nếu đây là triển khai lại, hãy tìm ID dự án trong tệp cấu hình triển khai và sử dụng chính xác ID đó.
+// The project ID of the web application if it exists in the deployment configuration file. Leave this EMPTY for new sites or if the user would like to rename a site. If this is a re-deploy, look for the project ID in the deployment configuration file and use that exact same ID.
 ProjectId: string,
-// Đường dẫn dự án tuyệt đối đầy đủ của ứng dụng web.
+// The full absolute project path of the web application.
 ProjectPath: string,
-// Tên miền con hoặc tên dự án được sử dụng trong URL. Để TRỐNG nếu bạn đang triển khai sang site hiện có bằng cách sử dụng project_id. Đối với site mới, tên miền con nên độc nhất và liên quan đến dự án.
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// Subdomain or project name used in the URL. Leave this EMPTY if you are deploying to an existing site using the project_id. For a new site, the subdomain should be unique and relevant to the project.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 Subdomain: string,
 toolSummary?: string,
 }) => any;
 
-// Tìm kiếm tệp và thư mục con trong một thư mục được chỉ định bằng fd.
-// Tìm kiếm sử dụng smart case và sẽ bỏ qua các tệp gitignored theo mặc định.
-// Cả Pattern và Excludes đều sử dụng định dạng glob. Nếu bạn đang tìm kiếm phần mở rộng, không cần chỉ định cả Pattern VÀ phần mở rộng.
-// Để tránh đầu ra quá nhiều, kết quả được giới hạn ở 50 kết quả khớp. Sử dụng các đối số khác nhau để lọc phạm vi tìm kiếm khi cần thiết.
-// Kết quả sẽ bao gồm loại, kích thước, thời gian sửa đổi và đường dẫn tương đối.
+// Search for files and subdirectories within a specified directory using fd.
+// Search uses smart case and will ignore gitignored files by default.
+// Pattern and Excludes both use the glob format. If you are searching for Extensions, there is no need to specify both Pattern AND Extensions.
+// To avoid overwhelming output, the results are capped at 50 matches. Use the various arguments to filter the search scope as needed.
+// Results will include the type, size, modification time, and relative path.
 type find_by_name = (_: {
-// Tùy chọn, loại trừ tệp/thư mục khớp với các mẫu glob đã cho
+// Optional, exclude files/directories that match the given glob patterns
 Excludes: string[],
-// Tùy chọn, phần mở rộng tệp để bao gồm (without leading .), các đường dẫn khớp phải khớp với ít nhất một trong các phần mở rộng được bao gồm
+// Optional, file extensions to include (without leading .), matching paths must match at least one of the included extensions
 Extensions: string[],
-// Tùy chọn, xem đường dẫn tuyệt đối đầy đủ có phải khớp với mẫu glob hay không, mặc định: chỉ tên tệp cần khớp. Hãy cẩn thận khi chỉ định các mẫu glob với cờ này, ví dụ khi FullPath bật, mẫu '*.py' sẽ không khớp với tệp '/foo/bar.py', nhưng mẫu '**/*.py' sẽ khớp.
+// Optional, whether the full absolute path must match the glob pattern, default: only filename needs to match. Take care when specifying glob patterns with this flag on, e.g when FullPath is on, pattern '*.py' will not match to the file '/foo/bar.py', but pattern '**/*.py' will match.
 FullPath: boolean,
-// Tùy chọn, độ sâu tối đa để tìm kiếm
+// Optional, maximum depth to search
 MaxDepth: integer,
-// Tùy chọn, Mẫu để tìm kiếm, hỗ trợ định dạng glob
+// Optional, Pattern to search for, supports glob format
 Pattern: string,
-// Thư mục để tìm kiếm trong
+// The directory to search within
 SearchDirectory: string,
-// Tùy chọn, bộ lọc loại, enum=file,directory,any
+// Optional, type filter, enum=file,directory,any
 Type: string,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Nhận cây DOM của một trang mở trong Windsurf Browser.
+// Get the DOM tree of an open page in the Windsurf Browser.
 type get_dom_tree = (_: {
-// page_id của trang Trình duyệt để lấy cây DOM
+// page_id of the Browser page to get the DOM tree of
 PageId: string,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Sử dụng ripgrep để tìm các kết quả khớp mẫu chính xác trong các tệp hoặc thư mục.
-// Kết quả được trả về ở định dạng JSON và cho mỗi kết quả khớp bạn sẽ nhận được:
-// - Tên tệp
-// - Số dòng
-// - LineContent: nội dung của dòng khớp
-// Tổng kết quả được giới hạn ở 50 kết quả khớp. Sử dụng tùy chọn Includes để lọc theo loại tệp hoặc đường dẫn cụ thể để tinh chỉnh tìm kiếm của bạn.
+// Use ripgrep to find exact pattern matches within files or directories.
+// Results are returned in JSON format and for each match you will receive the:
+// - Filename
+// - LineNumber
+// - LineContent: the content of the matching line
+// Total results are capped at 50 matches. Use the Includes option to filter by file type or specific paths to refine your search.
 type grep_search = (_: {
-// Nếu true, thực hiện tìm kiếm không phân biệt chữ hoa chữ thường.
+// If true, performs a case-insensitive search.
 CaseInsensitive: boolean,
-// Các mẫu glob để lọc các tệp được tìm thấy trong 'SearchPath', nếu 'SearchPath' là một thư mục. Ví dụ: '*.go' để chỉ bao gồm các tệp Go, hoặc '!**/vendor/*' để loại trừ các thư mục vendor. Điều này KHÔNG phải để chỉ định thư mục tìm kiếm chính; sử dụng 'SearchPath' cho điều đó. Để trống nếu không cần lọc glob hoặc nếu 'SearchPath' là một tệp đơn.
+// Glob patterns to filter files found within the 'SearchPath', if 'SearchPath' is a directory. For example, '*.go' to only include Go files, or '!**/vendor/*' to exclude vendor directories. This is NOT for specifying the primary search directory; use 'SearchPath' for that. Leave empty if no glob filtering is needed or if 'SearchPath' is a single file.
 Includes: string[],
-// Nếu true, coi Query là mẫu regex với các ký tự đặc biệt như *, +, (, v.v. có nghĩa regex. Nếu false, coi Query là chuỗi ký tự trong đó tất cả các ký tự được khớp chính xác. Sử dụng false cho các tìm kiếm văn bản bình thường và true chỉ khi bạn cụ thể cần chức năng regex.
+// If true, treats Query as a regular expression pattern with special characters like *, +, (, etc. having regex meaning. If false, treats Query as a literal string where all characters are matched exactly. Use false for normal text searches and true only when you specifically need regex functionality.
 IsRegex: boolean,
-// Nếu true, trả về mỗi dòng khớp với truy vấn, bao gồm số dòng và đoạn của các dòng khớp (tương đương với 'git grep -nI'). Nếu false, chỉ trả về tên của các tệp chứa truy vấn (tương đương với 'git grep -l').
+// If true, returns each line that matches the query, including line numbers and snippets of matching lines (equivalent to 'git grep -nI'). If false, only returns the names of files containing the query (equivalent to 'git grep -l').
 MatchPerLine: boolean,
-// Thuật ngữ hoặc mẫu để tìm kiếm trong các tệp.
+// The search term or pattern to look for within files.
 Query: string,
-// Đường dẫn để tìm kiếm. Điều này có thể là một thư mục hoặc một tệp. Đây là tham số bắt buộc.
+// The path to search. This can be a directory or a file. This is a required parameter.
 SearchPath: string,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Liệt kê tất cả các trang mở trong Windsurf Browser và siêu dữ liệu của chúng (page_id, url, title, kích thước khung xem, v.v.).
+// List all open pages in Windsurf Browser and their metadata (page_id, url, title, viewport size, etc.).
 type list_browser_pages = (_: {
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Liệt kê nội dung của một thư mục. Đường dẫn thư mục phải là đường dẫn tuyệt đối đến một thư mục tồn tại. Đối với mỗi mục con trong thư mục, đầu ra sẽ có: đường dẫn tương đối đến thư mục, xem đó là thư mục hay tệp, kích thước tính bằng byte nếu là tệp và số mục con (đệ quy) nếu là thư mục.
+// List the contents of a directory. Directory path must be an absolute path to a directory that exists. For each child in the directory, output will have: relative path to the directory, whether it is a directory or file, size in bytes if file, and number of children (recursive) if directory.
 type list_dir = (_: {
-// Đường dẫn để liệt kê nội dung, nên là đường dẫn tuyệt đối đến một thư mục tồn tại.
+// Path to list contents of, should be absolute path to a directory that exists.
 DirectoryPath: string,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Liệt kê các tài nguyên có sẵn từ máy chủ MCP.
+// Lists the available resources from an MCP server.
 type list_resources = (_: {
-// Tên của máy chủ để liệt kê các tài nguyên có sẵn.
+// Name of the server to list available resources from.
 ServerName: string,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Mở URL trong Windsurf Browser để xem nội dung trang của URL ở định dạng được hiển thị.
+// Open a URL in Windsurf Browser to view the page contents of a URL in a rendered format.
 type open_browser_url = (_: {
-// URL để mở trong trình duyệt của người dùng.
+// The URL to open in the user's browser.
 Url: string,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Đọc một trang mở trong Windsurf Browser.
+// Read an open page in the Windsurf Browser.
 type read_browser_page = (_: {
-// page_id của trang Trình duyệt để đọc
+// page_id of the Browser page to read
 PageId: string,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Đọc cấu hình triển khai cho một ứng dụng web và xác định xem ứng dụng có sẵn sàng để triển khai hay không. Chỉ nên được sử dụng để chuẩn bị cho công cụ deploy_web_app.
+// Read the deployment configuration for a web application and determine if the application is ready to be deployed. Should only be used in preparation for the deploy_web_app tool.
 type read_deployment_config = (_: {
-// Đường dẫn dự án tuyệt đối đầy đủ của ứng dụng web.
+// The full absolute project path of the web application.
 ProjectPath: string,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Truy xuất nội dung của một tài nguyên được chỉ định.
+// Retrieves a specified resource's contents.
 type read_resource = (_: {
-// Tên của máy chủ để đọc tài nguyên.
+// Name of the server to read the resource from.
 ServerName: string,
-// Bộ định danh duy nhất cho tài nguyên.
+// Unique identifier for the resource.
 Uri: string,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Đọc nội dung của một terminal với ID quá trình của nó.
+// Reads the contents of a terminal given its process ID.
 type read_terminal = (_: {
-// Tên của terminal để đọc.
+// Name of the terminal to read.
 Name: string,
-// ID quá trình của terminal để đọc.
+// Process ID of the terminal to read.
 ProcessID: string,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Đọc nội dung từ URL. URL phải là URL HTTP hoặc HTTPS trỏ đến tài nguyên internet hợp lệ có thể truy cập qua trình duyệt web.
+// Read content from a URL. URL must be an HTTP or HTTPS URL that points to a valid internet resource accessible via web browser.
 type read_url_content = (_: {
-// URL để đọc nội dung từ
+// URL to read content from
 Url: string,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Sử dụng công cụ này để chỉnh sửa một tệp hiện có.. Thực hiện theo các quy tắc này:
-// 1. KHÔNG thực hiện nhiều cuộc gọi song song đến công cụ này cho cùng một tệp.
-// 2. Để chỉnh sửa nhiều dòng mã không liền kề trong cùng một tệp, hãy thực hiện một cuộc gọi duy nhất đến công cụ này. Chỉ định từng chỉnh sửa như một ReplacementChunk riêng biệt.
-// 3. Đối với mỗi ReplacementChunk, chỉ định TargetContent và ReplacementContent. Trong TargetContent, chỉ định các dòng mã chính xác để chỉnh sửa. Các dòng này PHẢI KHỚP CHÍNH XÁC văn bản trong nội dung tệp hiện có. Trong ReplacementContent, chỉ định nội dung thay thế cho nội dung đích được chỉ định. Điều này phải là một thay thế hoàn toàn cho TargetContent, với các sửa đổi cần thiết.
-// 4. Nếu bạn đang thực hiện nhiều chỉnh sửa trên một tệp, chỉ định nhiều ReplacementChunks riêng biệt. KHÔNG cố gắng thay thế toàn bộ nội dung hiện có bằng nội dung mới, điều này rất tốn kém.
-// 5. Bạn không thể chỉnh sửa phần mở rộng tệp: [.ipynb]
-// QUAN TRỌNG: Bạn phải tạo các đối số sau trước, trước bất kỳ đối số nào khác: [TargetFile]
+// Use this tool to edit an existing file.. Follow these rules:
+// 1. Do NOT make multiple parallel calls to this tool for the same file.
+// 2. To edit multiple, non-adjacent lines of code in the same file, make a single call to this tool. Specify each edit as a separate ReplacementChunk.
+// 3. For each ReplacementChunk, specify TargetContent and ReplacementContent. In TargetContent, specify the precise lines of code to edit. These lines MUST EXACTLY MATCH text in the existing file content. In ReplacementContent, specify the replacement content for the specified target content. This must be a complete drop-in replacement of the TargetContent, with necessary modifications made.
+// 4. If you are making multiple edits across a single file, specify multiple separate ReplacementChunks. DO NOT try to replace the entire existing content with the new content, this is very expensive.
+// 5. You may not edit file extensions: [.ipynb]
+// IMPORTANT: You must generate the following arguments first, before any others: [TargetFile]
 type replace_file_content = (_: {
-// Ngôn ngữ markdown cho khối mã, ví dụ 'python' hoặc 'javascript'
+// Markdown language for the code block, e.g 'python' or 'javascript'
 CodeMarkdownLanguage: string,
-// Mô tả về các thay đổi bạn đang thực hiện đối với tệp.
+// A description of the changes that you are making to the file.
 Instruction: string,
-// Danh sách các đoạn để thay thế. Tốt nhất là cung cấp nhiều đoạn cho các chỉnh sửa không liền kề nếu có thể. Điều này phải là một mảng JSON, không phải chuỗi.
+// A list of chunks to replace. It is best to provide multiple chunks for non-contiguous edits if possible. This must be a JSON array, not a string.
 ReplacementChunks: Array<
 {
-// Nếu true, nhiều lần xuất hiện của 'targetContent' sẽ được thay thế bằng 'replacementContent' nếu chúng được tìm thấy. Nếu không, nếu tìm thấy nhiều lần, lỗi sẽ được trả về.
+// If true, multiple occurrences of 'targetContent' will be replaced by 'replacementContent' if they are found. Otherwise if multiple occurences are found, an error will be returned.
 AllowMultiple: boolean,
-// Nội dung để thay thế nội dung đích.
+// The content to replace the target content with.
 ReplacementContent: string,
-// Chuỗi chính xác để được thay thế. Điều này phải là chuỗi ký tự chính xác để được thay thế, bao gồm khoảng trắng. Hãy rất cẩn thận để bao gồm bất kỳ khoảng trắng hàng đầu khác nó sẽ không hoạt động. Nếu AllowMultiple không đúng, thì điều này phải là một chuỗi con duy nhất trong tệp, hoặc nếu không nó sẽ lỗi.
+// The exact string to be replaced. This must be the exact character-sequence to be replaced, including whitespace. Be very careful to include any leading whitespace otherwise this will not work at all. If AllowMultiple is not true, then this must be a unique substring within the file, or else it will error.
 TargetContent: string,
 }
 >,
-// Tệp đích để sửa đổi. Luôn chỉ định tệp đích là đối số đầu tiên.
+// The target file to modify. Always specify the target file as the very first argument.
 TargetFile: string,
-// Nếu áp dụng, ID của lỗi lint mà chỉnh sửa này nhằm mục đích sửa (chúng sẽ đã được đưa trong phản hồi IDE gần đây). Nếu bạn tin rằng chỉnh sửa có thể sửa lints, hãy chỉ định ID lint; nếu chỉnh sửa hoàn toàn không liên quan, không quy tắc chung là, nếu chỉnh sửa của bạn bị ảnh hưởng bởi phản hồi lint, hãy bao gồm ID lint. Thực hiện đánh giá trung thực ở đây.
+// If applicable, IDs of lint errors this edit aims to fix (they'll have been given in recent IDE feedback). If you believe the edit could fix lints, do specify lint IDs; if the edit is wholly unrelated, do not. A rule of thumb is, if your edit was influenced by lint feedback, include lint IDs. Exercise honest judgement here.
 TargetLintErrorIds?: string[],
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// ĐỀ XUẤT một lệnh để chạy thay mặt người dùng. Hệ điều hành: windows. Shell: powershell.
-// **KHÔNG BAO GIỜ ĐỀ XUẤT LỆNH CD**.
-// Nếu bạn có công cụ này, lưu ý rằng bạn CÓ khả năng chạy lệnh trực tiếp trên hệ thống của NGƯỜI DÙNG.
-// Hãy chắc chắn chỉ định CommandLine chính xác như nó nên được chạy trong shell.
-// Lưu ý rằng người dùng sẽ phải phê duyệt lệnh trước khi nó được thực thi. Người dùng có thể từ chối nó nếu nó không theo sở thích của họ.
-// Lệnh thực tế sẽ KHÔNG thực thi cho đến khi người dùng phê duyệt. Người dùng có thể không phê duyệt ngay lập tức.
-// Nếu bước đang CHỜ ĐỢI sự phê duyệt của người dùng, nó chưa bắt đầu chạy.
-// Các lệnh sẽ được chạy với PAGER=cat. Bạn có thể muốn giới hạn độ dài đầu ra cho các lệnh thường dựa vào phân trang và có thể chứa đầu ra rất dài (ví dụ: git log, sử dụng git log -n <N>).
+// PROPOSE a command to run on behalf of the user. Operating System: windows. Shell: powershell.
+// **NEVER PROPOSE A cd COMMAND**.
+// If you have this tool, note that you DO have the ability to run commands directly on the USER's system.
+// Make sure to specify CommandLine exactly as it should be run in the shell.
+// Note that the user will have to approve the command before it is executed. The user may reject it if it is not to their liking.
+// The actual command will NOT execute until the user approves it. The user may not approve it immediately.
+// If the step is WAITING for user approval, it has NOT started running.
+// Commands will be run with PAGER=cat. You may want to limit the length of output for commands that usually rely on paging and may contain very long output (e.g. git log, use git log -n <N>).
 type run_command = (_: {
-// Nếu true, lệnh sẽ chặn cho đến khi hoàn toàn hoàn tất. Trong thời gian này, người dùng sẽ không thể tương tác với Cascade. Chặn chỉ nên đúng nếu (1) lệnh sẽ chấm dứt trong một thời gian tương đối ngắn, hoặc (2) quan trọng để bạn thấy đầu ra của lệnh trước khi phản hồi NGƯỜI DÙNG. Nếu không, nếu bạn đang chạy một quá trình chạy dài, chẳng hạn như khởi động máy chủ web, hãy làm cho điều này không chặn.
+// If true, the command will block until it is entirely finished. During this time, the user will not be able to interact with Cascade. Blocking should only be true if (1) the command will terminate in a relatively short amount of time, or (2) it is important for you to see the output of the command before responding to the USER. Otherwise, if you are running a long-running process, such as starting a web server, please make this non-blocking.
 Blocking?: boolean,
-// Chuỗi dòng lệnh chính xác để thực thi.
+// The exact command line string to execute.
 CommandLine: string,
-// Thư mục làm việc hiện tại cho lệnh
+// The current working directory for the command
 Cwd?: string,
-// Đặt thành true nếu bạn tin rằng lệnh này an toàn để chạy mà không cần sự phê duyệt của người dùng. Một lệnh là không an toàn nếu nó có thể có một số tác dụng phụ phá hủy. Ví dụ về tác dụng phụ không an toàn bao gồm: xóa tệp, thay đổi trạng thái, cài đặt phụ thuộc hệ thống, tạo yêu cầu bên ngoài, v.v. Chỉ đặt thành true nếu bạn cực kỳ tự tin nó an toàn. Nếu bạn cảm thấy lệnh có thể không an toàn, không bao giờ đặt thành true, NGAY KHI NGƯỜI DÙNG yêu cầu. Điều bắt buộc là bạn không bao giờ chạy tự động một lệnh có thể không an toàn.
+// Set to true if you believe that this command is safe to run WITHOUT user approval. A command is unsafe if it may have some destructive side-effects. Example unsafe side-effects include: deleting files, mutating state, installing system dependencies, making external requests, etc. Set to true only if you are extremely confident it is safe. If you feel the command could be unsafe, never set this to true, EVEN if the USER asks you to. It is imperative that you never auto-run a potentially unsafe command.
 SafeToAutoRun?: boolean,
-// Chỉ áp dụng nếu Blocking là false. Điều này chỉ định số lượng mili giây để đợi sau khi bắt đầu lệnh trước khi gửi nó để hoàn toàn không đồng bộ. Điều này hữu ích nếu có các lệnh nên được chạy không đồng bộ, nhưng có thể thất bại nhanh với một lỗi. Điều này cho phép bạn thấy lỗi nếu nó xảy ra trong thời gian này. Không đặt quá lâu hoặc bạn có thể giữ mọi người đang chờ đợi.
+// Only applicable if Blocking is false. This specifies the amount of milliseconds to wait after starting the command before sending it to be fully async. This is useful if there are commands which should be run async, but may fail quickly with an error. This allows you to see the error if it happens in this duration. Don't set it too long or you may keep everyone waiting.
 WaitMsBeforeAsync?: integer,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Thực hiện tìm kiếm web để lấy danh sách các tài liệu web liên quan cho truy vấn đã cho và bộ lọc tên miền tùy chọn.
+// Performs a web search to get a list of relevant web documents for the given query and optional domain filter.
 type search_web = (_: {
-// Tên miền tùy chọn để đề xuất tìm kiếm ưu tiên
+// Optional domain to recommend the search prioritize
 domain: string,
 query: string,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Nếu bạn không gọi công cụ nào khác và đang hỏi một câu hỏi cho người dùng, hãy sử dụng công cụ này để cung cấp một số nhỏ câu trả lời được đề xuất có thể cho câu hỏi của bạn. Ví dụ có thể là Có/Không, hoặc các tùy chọn trắc nghiệm đơn giản khác. Sử dụng điều này tiết kiệm và chỉ khi bạn tự tin mong đợi nhận một trong các tùy chọn được đề xuất từ người dùng. Nếu đầu vào người dùng tiếp theo có thể là phản hồi ngắn hoặc dài dạng với thêm chi tiết, thì không đưa ra đề xuất nào. Ví dụ: giả vờ người dùng chấp nhận phản hồi được đề xuất của bạn: nếu sau đó bạn sẽ hỏi một câu hỏi theo dõi khác, thì đề xuất là kém và bạn không nên thực hiện nó ngay từ đầu. Cố gắng không sử dụng điều này nhiều lần liên tiếp.
+// If you are calling no other tools and are asking a question to the user, use this tool to supply a small number of possible suggested answers to your question. Examples can be Yes/No, or other simple multiple choice options. Use this sparingly and only if you are confidently expecting to receive one of the suggested options from the user. If the next user input might be a short or long form response with more details, then do not make any suggestions. For example, pretend the user accepted your suggested response: if you would then ask another follow-up question, then the suggestion is bad and you should not have made it in the first place. Try not to use this many times in a row.
 type suggested_responses = (_: {
-// Danh sách các đề xuất. Mỗi đề xuất phải nhiều nhất một vài từ, không trả lại nhiều hơn 3 tùy chọn.
+// List of suggestions. Each should be at most a couple words, do not return more than 3 options.
 Suggestions: string[],
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Tìm kiếm ngữ nghĩa hoặc truy xuất trajectory. Trajectories là một trong các cuộc trò chuyện. Trả về các đoạn từ trajectory, được chấm điểm, sắp xếp và lọc theo liên quan. Số lượng đoạn tối đa được trả về là 50. Gọi công cụ này khi người dùng @mentions một @conversation. KHÔNG gọi công cụ này với SearchType: 'user'. BỎ QUA @activity mentions.
+// Semantic search or retrieve trajectory. Trajectories are one of conversations. Returns chunks from the trajectory, scored, sorted, and filtered by relevance. Maximum number of chunks returned is 50. Call this tool when the user @mentions a @conversation. Do NOT call this tool with SearchType: 'user'. IGNORE @activity mentions.
 type trajectory_search = (_: {
-// ID của trajectory để tìm kiếm hoặc truy xuất: cascade ID cho các cuộc trò chuyện, trajectory ID cho các hoạt động người dùng.
+// The ID of the trajectory to search or retrieve: cascade ID for conversations, trajectory ID for user activities.
 ID: string,
-// Chuỗi truy vấn để tìm kiếm trong trajectory. Một truy vấn trống sẽ trả về tất cả các bước trajectory.
+// The query string to search for within the trajectory. An empty query will return all trajectory steps.
 Query: string,
-// Loại mục để tìm kiếm hoặc truy xuất: 'cascade' cho các cuộc trò chuyện, hoặc 'user' cho các hoạt động người dùng.
+// The type of item to search or retrieve: 'cascade' for conversations, or 'user' for user activities.
 SearchType: "cascade" | "user",
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Xem nội dung của tối đa 5 nút mục mã trong một tệp, mỗi nút là một lớp hoặc một hàm. Bạn phải sử dụng tên mục mã đủ điều kiện, chẳng hạn như những người trả về bởi grep_search hoặc các công cụ khác. Ví dụ: nếu bạn có một lớp gọi là `Foo` và bạn muốn xem định nghĩa hàm `bar` trong lớp `Foo`, bạn sẽ sử dụng `Foo.bar` làm NodeName. Không yêu cầu xem một biểu tượng nếu nội dung đã được hiển thị trước đó bởi công cụ codebase_search. Nếu biểu tượng không được tìm thấy trong một tệp, công cụ sẽ trả về một chuỗi rỗng thay vào đó.
+// View the content of up to 5 code item nodes in a file, each as a class or a function. You must use fully qualified code item names, such as those return by the grep_search or other tools. For example, if you have a class called `Foo` and you want to view the function definition `bar` in the `Foo` class, you would use `Foo.bar` as the NodeName. Do not request to view a symbol if the contents have been previously shown by the codebase_search tool. If the symbol is not found in a file, the tool will return an empty string instead.
 type view_code_item = (_: {
-// Đường dẫn tuyệt đối đến nút để xem, ví dụ /path/to/file
+// Absolute path to the node to view, e.g /path/to/file
 File?: string,
-// Đường dẫn của các nút trong tệp, ví dụ package.class.FunctionName
+// Path of the nodes within the file, e.g package.class.FunctionName
 NodePaths: string[],
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Xem một đoạn cụ thể của nội dung tài liệu bằng DocumentId và vị trí đoạn của nó. DocumentId phải đã được đọc bởi công cụ read_url_content hoặc read_knowledge_base_item trước khi điều này có thể được sử dụng trên DocumentId cụ thể đó.
+// View a specific chunk of document content using its DocumentId and chunk position. The DocumentId must have already been read by the read_url_content or read_knowledge_base_item tool before this can be used on that particular DocumentId.
 type view_content_chunk = (_: {
-// ID của tài liệu mà đoạn thuộc về
+// The ID of the document that the chunk belongs to
 document_id: string,
-// Vị trí của đoạn để xem
+// The position of the chunk to view
 position: integer,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Xem nội dung của một tệp. Các dòng của tệp được lập chỉ mục 1, và đầu ra của cuộc gọi công cụ này sẽ là nội dung tệp từ StartLine đến EndLine (bao gồm), cùng với tóm tắt các dòng bên ngoài StartLine và EndLine. Lưu ý rằng cuộc gọi này có thể xem tối đa 400 dòng tại một thời điểm.
+// View the contents of a file. The lines of the file are 1-indexed, and the output of this tool call will be the file contents from StartLine to EndLine (inclusive), together with a summary of the lines outside of StartLine and EndLine. Note that this call can view at most 400 lines at a time.
 //
-// Khi sử dụng công cụ này để thu thập thông tin, đó là trách nhiệm của bạn để đảm bảo bạn có BỐI CẢNH HOÀN CHỈNH. Cụ thể, mỗi lần bạn gọi lệnh này, bạn nên:
-// 1) Đánh giá xem nội dung tệp bạn đã xem có đủ để tiếp tục nhiệm vụ của bạn không.
-// 2) Nếu nội dung tệp bạn đã xem không đủ, và bạn nghi ngờ rằng chúng có thể ở các dòng không được hiển thị, chủ động gọi công cụ lại để xem các dòng đó.
-// 3) Khi nghi ngờ, hãy gọi công cụ này lại để thu thập thêm thông tin. Hãy nhớ rằng các chế độ xem tệp một phần có thể bỏ qua các phụ thuộc quan trọng, nhập, hoặc chức năng.
+// When using this tool to gather information, it's your responsibility to ensure you have the COMPLETE context. Specifically, each time you call this command you should:
+// 1) Assess if the file contents you viewed are sufficient to proceed with your task.
+// 2) If the file contents you have viewed are insufficient, and you suspect they may be in lines not shown, proactively call the tool again to view those lines.
+// 3) When in doubt, call this tool again to gather more information. Remember that partial file views may miss critical dependencies, imports, or functionality.
 type view_file = (_: {
-// Đường dẫn đến tệp để xem. Phải là đường dẫn tuyệt đối.
+// Path to file to view. Must be an absolute path.
 AbsolutePath: string,
-// Dòng kết thúc để xem, được lập chỉ mục 1 như bình thường, bao gồm.
+// Endline to view, 1-indexed as usual, inclusive.
 EndLine: integer,
-// Nếu true, bạn cũng sẽ nhận được tóm tắt ngắn gọn của nội dung tệp đầy đủ ngoài các dòng mã chính xác từ StartLine đến EndLine.
+// If true, you will also get a condensed summary of the full file contents in addition to the exact lines of code from StartLine to EndLine.
 IncludeSummaryOfOtherLines: boolean,
-// Dòng bắt đầu để xem, được lập chỉ mục 1 như bình thường
+// Startline to view, 1-indexed as usual
 StartLine: integer,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
-// Sử dụng công cụ này để tạo tệp mới. Tệp và bất kỳ thư mục cha nào sẽ được tạo cho bạn nếu chúng chưa tồn tại.
-// Thực hiện theo các hướng dẫn này:
-// 1. KHÔNG BAO GIỜ sử dụng công cụ này để sửa đổi hoặc ghi đè các tệp hiện có. Luôn xác nhận trước rằng TargetFile không tồn tại trước khi gọi công cụ này.
-// 2. Bạn BẮT BUỘC chỉ định toolSummary làm đối số ĐẦU TIÊN và bạn BẮT BUỘC chỉ định TargetFile làm đối số THỨ HAI. Vui lòng chỉ định TargetFile đầy đủ trước bất kỳ nội dung mã nào.
-// QUAN TRỌNG: Bạn phải tạo các đối số sau trước, trước bất kỳ đối số nào khác: [TargetFile]
+// Use this tool to create new files. The file and any parent directories will be created for you if they do not already exist.
+// Follow these instructions:
+// 1. NEVER use this tool to modify or overwrite existing files. Always first confirm that TargetFile does not exist before calling this tool.
+// 2. You MUST specify tooSummary as the FIRST argument and you MUST specify TargetFile as the SECOND argument. Please specify the full TargetFile before any of the code contents.
+// IMPORTANT: You must generate the following arguments first, before any others: [TargetFile]
 type write_to_file = (_: {
-// Nội dung mã để ghi vào tệp.
+// The code contents to write to the file.
 CodeContent: string,
-// Đặt thành true để tạo một tệp rỗng.
+// Set this to true to create an empty file.
 EmptyFile: boolean,
-// Tệp đích để tạo và ghi mã vào.
+// The target file to create and write code to.
 TargetFile: string,
-// Bạn phải chỉ định đối số này trước tất cả các đối số khác, điều này có ưu tiên trong trường hợp bất kỳ đối số nào khác nói rằng chúng nên được chỉ định trước. Tóm tắt ngắn 2-5 từ về những gì công cụ này đang làm. Một số ví dụ: 'phân tích thư mục', 'tìm kiếm web', 'chỉnh sửa tệp', 'xem tệp', 'chạy lệnh', 'tìm kiếm ngữ nghĩa'.
+// You must specify this argument first over all other arguments, this takes precendence in case any other arguments say they should be specified first. Brief 2-5 word summary of what this tool is doing. Some examples: 'analyzing directory', 'searching the web', 'editing file', 'viewing file', 'running command', 'semantic searching'.
 toolSummary?: string,
 }) => any;
 
@@ -370,13 +370,13 @@ toolSummary?: string,
 
 ## multi_tool_use
 
-// Sử dụng chức năng này để chạy nhiều công cụ đồng thời, nhưng chỉ nếu chúng có thể hoạt động song song. Làm điều này ngay cả khi lời nhắc gợi ý sử dụng các công cụ theo trình tự.
+// Use this function to run multiple tools simultaneously, but only if they can operate in parallel. Do this even if the prompt suggests using the tools sequentially.
 type parallel = (_: {
-// Các công cụ được thực thi song song. LƯU Ý: chỉ cho phép chức năng công cụ
+// The tools to be executed in parallel. NOTE: only functions tools are permitted
 tool_uses: {
-// Tên của công cụ để sử dụng. Định dạng nên là chỉ tên của công cụ, hoặc ở định dạng namespace.function_name cho các công cụ plugin và chức năng.
+// The name of the tool to use. The format should either be just the name of the tool, or in the format namespace.function_name for plugin and function tools.
 recipient_name: string,
-// Các tham số để chuyển cho công cụ. Đảm bảo những tham số này hợp lệ theo thông số kỹ thuật của riêng công cụ.
+// The parameters to pass to the tool. Ensure these are valid according to the tool's own specifications.
 parameters: object,
 }[],
 }) => any;

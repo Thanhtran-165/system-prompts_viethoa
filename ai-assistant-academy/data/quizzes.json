@@ -1,0 +1,2290 @@
+[
+  {
+    "id": "quiz-model-amp",
+    "type": "model",
+    "modelId": "amp",
+    "title": "Quiz: Amp",
+    "questions": [
+      {
+        "id": "amp-q2",
+        "question": "Amp thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Other",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Amp thuộc danh mục \"Other\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-anthropic",
+    "type": "model",
+    "modelId": "anthropic",
+    "title": "Quiz: Anthropic",
+    "questions": [
+      {
+        "id": "anthropic-q1",
+        "question": "Anthropic có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "13",
+            "correct": false
+          },
+          {
+            "text": "16",
+            "correct": true
+          },
+          {
+            "text": "21",
+            "correct": false
+          },
+          {
+            "text": "24",
+            "correct": false
+          }
+        ],
+        "explanation": "Anthropic có 16 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "anthropic-q2",
+        "question": "Anthropic thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Other",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Anthropic thuộc danh mục \"Other\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-augment-code",
+    "type": "model",
+    "modelId": "augment-code",
+    "title": "Quiz: Augment Code",
+    "questions": [
+      {
+        "id": "augment-code-q1",
+        "question": "Augment Code có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "22",
+            "correct": false
+          },
+          {
+            "text": "25",
+            "correct": true
+          },
+          {
+            "text": "30",
+            "correct": false
+          },
+          {
+            "text": "37",
+            "correct": false
+          }
+        ],
+        "explanation": "Augment Code có 25 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "augment-code-q2",
+        "question": "Augment Code thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "IDE Integrated",
+            "correct": true
+          },
+          {
+            "text": "Web Builders",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Augment Code thuộc danh mục \"IDE Integrated\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-cluely",
+    "type": "model",
+    "modelId": "cluely",
+    "title": "Quiz: Cluely",
+    "questions": [
+      {
+        "id": "cluely-q2",
+        "question": "Cluely thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Browser",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Cluely thuộc danh mục \"Browser\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-codebuddy-prompts",
+    "type": "model",
+    "modelId": "codebuddy-prompts",
+    "title": "Quiz: CodeBuddy Prompts",
+    "questions": [
+      {
+        "id": "codebuddy-prompts-q2",
+        "question": "CodeBuddy Prompts thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Other",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "CodeBuddy Prompts thuộc danh mục \"Other\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-comet-assistant",
+    "type": "model",
+    "modelId": "comet-assistant",
+    "title": "Quiz: Comet Assistant",
+    "questions": [
+      {
+        "id": "comet-assistant-q2",
+        "question": "Comet Assistant thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Browser",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Comet Assistant thuộc danh mục \"Browser\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-cursor-prompts",
+    "type": "model",
+    "modelId": "cursor-prompts",
+    "title": "Quiz: Cursor Prompts",
+    "questions": [
+      {
+        "id": "cursor-prompts-q1",
+        "question": "Cursor Prompts có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "10",
+            "correct": false
+          },
+          {
+            "text": "13",
+            "correct": true
+          },
+          {
+            "text": "18",
+            "correct": false
+          },
+          {
+            "text": "19",
+            "correct": false
+          }
+        ],
+        "explanation": "Cursor Prompts có 13 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "cursor-prompts-q2",
+        "question": "Cursor Prompts thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "IDE Integrated",
+            "correct": true
+          },
+          {
+            "text": "Web Builders",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Cursor Prompts thuộc danh mục \"IDE Integrated\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-devin-ai",
+    "type": "model",
+    "modelId": "devin-ai",
+    "title": "Quiz: Devin AI",
+    "questions": [
+      {
+        "id": "devin-ai-q2",
+        "question": "Devin AI thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Agentic",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Knowledge",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Devin AI thuộc danh mục \"Agentic\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-emergent",
+    "type": "model",
+    "modelId": "emergent",
+    "title": "Quiz: Emergent",
+    "questions": [
+      {
+        "id": "emergent-q2",
+        "question": "Emergent thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Other",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Emergent thuộc danh mục \"Other\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-google",
+    "type": "model",
+    "modelId": "google",
+    "title": "Quiz: Google",
+    "questions": [
+      {
+        "id": "google-q2",
+        "question": "Google thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Other",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Google thuộc danh mục \"Other\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-junie",
+    "type": "model",
+    "modelId": "junie",
+    "title": "Quiz: Junie",
+    "questions": [
+      {
+        "id": "junie-q2",
+        "question": "Junie thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Agentic",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Knowledge",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Junie thuộc danh mục \"Agentic\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-kiro",
+    "type": "model",
+    "modelId": "kiro",
+    "title": "Quiz: Kiro",
+    "questions": [
+      {
+        "id": "kiro-q1",
+        "question": "Kiro có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "13",
+            "correct": false
+          },
+          {
+            "text": "16",
+            "correct": true
+          },
+          {
+            "text": "21",
+            "correct": false
+          },
+          {
+            "text": "24",
+            "correct": false
+          }
+        ],
+        "explanation": "Kiro có 16 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "kiro-q2",
+        "question": "Kiro thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Other",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Kiro thuộc danh mục \"Other\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-leap-new",
+    "type": "model",
+    "modelId": "leap-new",
+    "title": "Quiz: Leap.new",
+    "questions": [
+      {
+        "id": "leap-new-q1",
+        "question": "Leap.new có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "7",
+            "correct": false
+          },
+          {
+            "text": "10",
+            "correct": true
+          },
+          {
+            "text": "15",
+            "correct": false
+          },
+          {
+            "text": "15",
+            "correct": false
+          }
+        ],
+        "explanation": "Leap.new có 10 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "leap-new-q2",
+        "question": "Leap.new thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Web Builders",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Leap.new thuộc danh mục \"Web Builders\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-lovable",
+    "type": "model",
+    "modelId": "lovable",
+    "title": "Quiz: Lovable",
+    "questions": [
+      {
+        "id": "lovable-q2",
+        "question": "Lovable thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Web Builders",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Lovable thuộc danh mục \"Web Builders\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-manus-agent-tools-prompt",
+    "type": "model",
+    "modelId": "manus-agent-tools-prompt",
+    "title": "Quiz: Manus Agent Tools & Prompt",
+    "questions": [
+      {
+        "id": "manus-agent-tools-prompt-q1",
+        "question": "Manus Agent Tools & Prompt có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "26",
+            "correct": false
+          },
+          {
+            "text": "29",
+            "correct": true
+          },
+          {
+            "text": "34",
+            "correct": false
+          },
+          {
+            "text": "43",
+            "correct": false
+          }
+        ],
+        "explanation": "Manus Agent Tools & Prompt có 29 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "manus-agent-tools-prompt-q2",
+        "question": "Manus Agent Tools & Prompt thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Agentic",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Knowledge",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Manus Agent Tools & Prompt thuộc danh mục \"Agentic\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-notionai",
+    "type": "model",
+    "modelId": "notionai",
+    "title": "Quiz: NotionAi",
+    "questions": [
+      {
+        "id": "notionai-q1",
+        "question": "NotionAi có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "5",
+            "correct": false
+          },
+          {
+            "text": "8",
+            "correct": true
+          },
+          {
+            "text": "13",
+            "correct": false
+          },
+          {
+            "text": "12",
+            "correct": false
+          }
+        ],
+        "explanation": "NotionAi có 8 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "notionai-q2",
+        "question": "NotionAi thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Knowledge",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "NotionAi thuộc danh mục \"Knowledge\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-open-source-prompts",
+    "type": "model",
+    "modelId": "open-source-prompts",
+    "title": "Quiz: Open Source prompts",
+    "questions": [
+      {
+        "id": "open-source-prompts-q1",
+        "question": "Open Source prompts có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "12",
+            "correct": false
+          },
+          {
+            "text": "15",
+            "correct": true
+          },
+          {
+            "text": "20",
+            "correct": false
+          },
+          {
+            "text": "22",
+            "correct": false
+          }
+        ],
+        "explanation": "Open Source prompts có 15 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "open-source-prompts-q2",
+        "question": "Open Source prompts thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Other",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Open Source prompts thuộc danh mục \"Other\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-orchids-app",
+    "type": "model",
+    "modelId": "orchids-app",
+    "title": "Quiz: Orchids.app",
+    "questions": [
+      {
+        "id": "orchids-app-q2",
+        "question": "Orchids.app thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Other",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Orchids.app thuộc danh mục \"Other\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-perplexity",
+    "type": "model",
+    "modelId": "perplexity",
+    "title": "Quiz: Perplexity",
+    "questions": [
+      {
+        "id": "perplexity-q2",
+        "question": "Perplexity thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Knowledge",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Perplexity thuộc danh mục \"Knowledge\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-poke",
+    "type": "model",
+    "modelId": "poke",
+    "title": "Quiz: Poke",
+    "questions": [
+      {
+        "id": "poke-q1",
+        "question": "Poke có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "17",
+            "correct": false
+          },
+          {
+            "text": "20",
+            "correct": true
+          },
+          {
+            "text": "25",
+            "correct": false
+          },
+          {
+            "text": "30",
+            "correct": false
+          }
+        ],
+        "explanation": "Poke có 20 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "poke-q2",
+        "question": "Poke thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Knowledge",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Poke thuộc danh mục \"Knowledge\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-qoder",
+    "type": "model",
+    "modelId": "qoder",
+    "title": "Quiz: Qoder",
+    "questions": [
+      {
+        "id": "qoder-q1",
+        "question": "Qoder có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "17",
+            "correct": false
+          },
+          {
+            "text": "20",
+            "correct": true
+          },
+          {
+            "text": "25",
+            "correct": false
+          },
+          {
+            "text": "30",
+            "correct": false
+          }
+        ],
+        "explanation": "Qoder có 20 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "qoder-q2",
+        "question": "Qoder thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "IDE Integrated",
+            "correct": true
+          },
+          {
+            "text": "Web Builders",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Qoder thuộc danh mục \"IDE Integrated\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-replit",
+    "type": "model",
+    "modelId": "replit",
+    "title": "Quiz: Replit",
+    "questions": [
+      {
+        "id": "replit-q1",
+        "question": "Replit có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "13",
+            "correct": false
+          },
+          {
+            "text": "16",
+            "correct": true
+          },
+          {
+            "text": "21",
+            "correct": false
+          },
+          {
+            "text": "24",
+            "correct": false
+          }
+        ],
+        "explanation": "Replit có 16 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "replit-q2",
+        "question": "Replit thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Other",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Replit thuộc danh mục \"Other\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-same-dev",
+    "type": "model",
+    "modelId": "same-dev",
+    "title": "Quiz: Same.dev",
+    "questions": [
+      {
+        "id": "same-dev-q1",
+        "question": "Same.dev có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "15",
+            "correct": false
+          },
+          {
+            "text": "18",
+            "correct": true
+          },
+          {
+            "text": "23",
+            "correct": false
+          },
+          {
+            "text": "27",
+            "correct": false
+          }
+        ],
+        "explanation": "Same.dev có 18 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "same-dev-q2",
+        "question": "Same.dev thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Web Builders",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Same.dev thuộc danh mục \"Web Builders\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-trae",
+    "type": "model",
+    "modelId": "trae",
+    "title": "Quiz: Trae",
+    "questions": [
+      {
+        "id": "trae-q2",
+        "question": "Trae thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "IDE Integrated",
+            "correct": true
+          },
+          {
+            "text": "Web Builders",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Trae thuộc danh mục \"IDE Integrated\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-traycer-ai",
+    "type": "model",
+    "modelId": "traycer-ai",
+    "title": "Quiz: Traycer AI",
+    "questions": [
+      {
+        "id": "traycer-ai-q2",
+        "question": "Traycer AI thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "IDE Integrated",
+            "correct": true
+          },
+          {
+            "text": "Web Builders",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Traycer AI thuộc danh mục \"IDE Integrated\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-vscode-agent",
+    "type": "model",
+    "modelId": "vscode-agent",
+    "title": "Quiz: VSCode Agent",
+    "questions": [
+      {
+        "id": "vscode-agent-q2",
+        "question": "VSCode Agent thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "IDE Integrated",
+            "correct": true
+          },
+          {
+            "text": "Web Builders",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "VSCode Agent thuộc danh mục \"IDE Integrated\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-warp-dev",
+    "type": "model",
+    "modelId": "warp-dev",
+    "title": "Quiz: Warp.dev",
+    "questions": [
+      {
+        "id": "warp-dev-q1",
+        "question": "Warp.dev có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "2",
+            "correct": false
+          },
+          {
+            "text": "5",
+            "correct": true
+          },
+          {
+            "text": "10",
+            "correct": false
+          },
+          {
+            "text": "7",
+            "correct": false
+          }
+        ],
+        "explanation": "Warp.dev có 5 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "warp-dev-q2",
+        "question": "Warp.dev thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Other",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Warp.dev thuộc danh mục \"Other\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-windsurf",
+    "type": "model",
+    "modelId": "windsurf",
+    "title": "Quiz: Windsurf",
+    "questions": [
+      {
+        "id": "windsurf-q2",
+        "question": "Windsurf thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "IDE Integrated",
+            "correct": true
+          },
+          {
+            "text": "Web Builders",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Windsurf thuộc danh mục \"IDE Integrated\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-xcode",
+    "type": "model",
+    "modelId": "xcode",
+    "title": "Quiz: Xcode",
+    "questions": [
+      {
+        "id": "xcode-q2",
+        "question": "Xcode thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Other",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Xcode thuộc danh mục \"Other\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-z-ai-code",
+    "type": "model",
+    "modelId": "z-ai-code",
+    "title": "Quiz: Z.ai Code",
+    "questions": [
+      {
+        "id": "z-ai-code-q1",
+        "question": "Z.ai Code có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "7",
+            "correct": false
+          },
+          {
+            "text": "10",
+            "correct": true
+          },
+          {
+            "text": "15",
+            "correct": false
+          },
+          {
+            "text": "15",
+            "correct": false
+          }
+        ],
+        "explanation": "Z.ai Code có 10 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "z-ai-code-q2",
+        "question": "Z.ai Code thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Other",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "Z.ai Code thuộc danh mục \"Other\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-dia",
+    "type": "model",
+    "modelId": "dia",
+    "title": "Quiz: dia",
+    "questions": [
+      {
+        "id": "dia-q1",
+        "question": "dia có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "2",
+            "correct": false
+          },
+          {
+            "text": "5",
+            "correct": true
+          },
+          {
+            "text": "10",
+            "correct": false
+          },
+          {
+            "text": "7",
+            "correct": false
+          }
+        ],
+        "explanation": "dia có 5 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "dia-q2",
+        "question": "dia thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Other",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "dia thuộc danh mục \"Other\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-v0-prompts-and-tools",
+    "type": "model",
+    "modelId": "v0-prompts-and-tools",
+    "title": "Quiz: v0 Prompts and Tools",
+    "questions": [
+      {
+        "id": "v0-prompts-and-tools-q1",
+        "question": "v0 Prompts and Tools có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "22",
+            "correct": false
+          },
+          {
+            "text": "25",
+            "correct": true
+          },
+          {
+            "text": "30",
+            "correct": false
+          },
+          {
+            "text": "37",
+            "correct": false
+          }
+        ],
+        "explanation": "v0 Prompts and Tools có 25 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "v0-prompts-and-tools-q2",
+        "question": "v0 Prompts and Tools thuộc danh mục AI assistant nào?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Web Builders",
+            "correct": true
+          },
+          {
+            "text": "IDE Integrated",
+            "correct": false
+          },
+          {
+            "text": "Agentic",
+            "correct": false
+          },
+          {
+            "text": "Other",
+            "correct": false
+          }
+        ],
+        "explanation": "v0 Prompts and Tools thuộc danh mục \"Web Builders\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz-function-terminal",
+    "type": "function",
+    "category": "Terminal",
+    "title": "Quiz: Terminal",
+    "questions": [
+      {
+        "id": "func-bash-q0",
+        "question": "Công cụ \"Bash\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Terminal",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"Bash\" thuộc danh mục \"Terminal\". Executes the given shell command in the user's default shell. Important notes: 1. Directory verifica"
+      },
+      {
+        "id": "func-bashoutput-q1",
+        "question": "Công cụ \"BashOutput\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Terminal",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"BashOutput\" thuộc danh mục \"Terminal\". \n- Truy xuất đầu ra từ một shell bash nền đang chạy hoặc đã hoàn thành\n- Nhận một tham số shell_id x"
+      },
+      {
+        "id": "func-killbash-q2",
+        "question": "Công cụ \"KillBash\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Terminal",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"KillBash\" thuộc danh mục \"Terminal\". \n- Giết chết một shell bash nền đang chạy bằng ID của nó\n- Nhận một tham số shell_id xác định shell "
+      }
+    ]
+  },
+  {
+    "id": "quiz-function-code-search",
+    "type": "function",
+    "category": "Code Search",
+    "title": "Quiz: Code Search",
+    "questions": [
+      {
+        "id": "func-codebase-search-agent-q0",
+        "question": "Công cụ \"codebase_search_agent\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Code Search",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"codebase_search_agent\" thuộc danh mục \"Code Search\". Intelligently search your codebase with an agent that has access to: list_directory, Grep, glob, Rea"
+      },
+      {
+        "id": "func-grep-q1",
+        "question": "Công cụ \"Grep\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Code Search",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"Grep\" thuộc danh mục \"Code Search\". Search for exact text patterns in files using ripgrep, a fast keyword search tool. WHEN TO USE: When"
+      },
+      {
+        "id": "func-web-search-q2",
+        "question": "Công cụ \"web_search\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Code Search",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"web_search\" thuộc danh mục \"Code Search\". Search the web for information. Returns search result titles, associated URLs, and a small summary. "
+      }
+    ]
+  },
+  {
+    "id": "quiz-function-other",
+    "type": "function",
+    "category": "Other",
+    "title": "Quiz: Other",
+    "questions": [
+      {
+        "id": "func-create-file-q0",
+        "question": "Công cụ \"create_file\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Other",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"create_file\" thuộc danh mục \"Other\". Create or overwrite a file in the workspace. Use this tool when you want to create a new file with t"
+      },
+      {
+        "id": "func-format-file-q1",
+        "question": "Công cụ \"format_file\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Other",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"format_file\" thuộc danh mục \"Other\". Format a file using VS Code's formatter. This tool is only available when running in VS Code. It ret"
+      },
+      {
+        "id": "func-get-diagnostics-q2",
+        "question": "Công cụ \"get_diagnostics\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Other",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"get_diagnostics\" thuộc danh mục \"Other\". Get the diagnostics (errors, warnings, etc.) for a file or directory (prefer running for directories"
+      }
+    ]
+  },
+  {
+    "id": "quiz-function-file-operations",
+    "type": "function",
+    "category": "File Operations",
+    "title": "Quiz: File Operations",
+    "questions": [
+      {
+        "id": "func-edit-file-q0",
+        "question": "Công cụ \"edit_file\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "File Operations",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"edit_file\" thuộc danh mục \"File Operations\". Make edits to a text file. Replaces old_str with new_str in the given file. Returns a git-style diff"
+      },
+      {
+        "id": "func-glob-q1",
+        "question": "Công cụ \"glob\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "File Operations",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"glob\" thuộc danh mục \"File Operations\". Fast file pattern matching tool that works with any codebase size. Use this tool to find files by na"
+      },
+      {
+        "id": "func-list-directory-q2",
+        "question": "Công cụ \"list_directory\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "File Operations",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"list_directory\" thuộc danh mục \"File Operations\". List the files in the workspace in a given directory. Use the glob tool for filtering files by patte"
+      }
+    ]
+  },
+  {
+    "id": "quiz-function-task-management",
+    "type": "function",
+    "category": "Task Management",
+    "title": "Quiz: Task Management",
+    "questions": [
+      {
+        "id": "func-task-q0",
+        "question": "Công cụ \"Task\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Task Management",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"Task\" thuộc danh mục \"Task Management\". Perform a task (a sub-task of the user's overall task) using a sub-agent that has access to: list_di"
+      },
+      {
+        "id": "func-exitplanmode-q1",
+        "question": "Công cụ \"ExitPlanMode\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Task Management",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"ExitPlanMode\" thuộc danh mục \"Task Management\". Sử dụng công cụ này khi bạn ở chế độ kế hoạch và đã hoàn thành việc trình bày kế hoạch và sẵn sàng v"
+      },
+      {
+        "id": "func-add-tasks-q2",
+        "question": "Công cụ \"add_tasks\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Task Management",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"add_tasks\" thuộc danh mục \"Task Management\". Thêm một hoặc nhiều tác vụ mới (và tác vụ con tùy chọn) vào danh sách tác vụ."
+      }
+    ]
+  },
+  {
+    "id": "quiz-function-code-edit",
+    "type": "function",
+    "category": "Code Edit",
+    "title": "Quiz: Code Edit",
+    "questions": [
+      {
+        "id": "func-undo-edit-q0",
+        "question": "Công cụ \"undo_edit\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Code Edit",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"undo_edit\" thuộc danh mục \"Code Edit\". Undo the last edit made to a file. This command reverts the most recent edit made to the specified f"
+      },
+      {
+        "id": "func-edit-q1",
+        "question": "Công cụ \"Edit\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Code Edit",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"Edit\" thuộc danh mục \"Code Edit\". Thực hiện các thay thế chuỗi chính xác trong các tệp. \n\nCách sử dụng:\n- Bạn phải sử dụng công cụ `Re"
+      },
+      {
+        "id": "func-multiedit-q2",
+        "question": "Công cụ \"MultiEdit\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Code Edit",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"MultiEdit\" thuộc danh mục \"Code Edit\". Đây là một công cụ để thực hiện nhiều chỉnh sửa cho một tệp duy nhất trong một thao tác. Nó được xây"
+      }
+    ]
+  },
+  {
+    "id": "quiz-function-web---browser",
+    "type": "function",
+    "category": "Web & Browser",
+    "title": "Quiz: Web & Browser",
+    "questions": [
+      {
+        "id": "func-webfetch-q0",
+        "question": "Công cụ \"WebFetch\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Web & Browser",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"WebFetch\" thuộc danh mục \"Web & Browser\". \n- Tìm nạp nội dung từ một URL được chỉ định và xử lý nó bằng cách sử dụng mô hình AI\n- Nhận một URL"
+      },
+      {
+        "id": "func-open-browser-q1",
+        "question": "Công cụ \"open-browser\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Web & Browser",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"open-browser\" thuộc danh mục \"Web & Browser\". Mở một URL trong trình duyệt mặc định."
+      },
+      {
+        "id": "func-web-fetch-q2",
+        "question": "Công cụ \"web-fetch\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Web & Browser",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"web-fetch\" thuộc danh mục \"Web & Browser\". Lấy một trang web và trả về nội dung của nó ở định dạng Markdown."
+      }
+    ]
+  },
+  {
+    "id": "quiz-function-git---version",
+    "type": "function",
+    "category": "Git & Version",
+    "title": "Quiz: Git & Version",
+    "questions": [
+      {
+        "id": "func-git-commit-retrieval-q0",
+        "question": "Công cụ \"git-commit-retrieval\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Git & Version",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"git-commit-retrieval\" thuộc danh mục \"Git & Version\". Sử dụng lịch sử commit của kho lưu trữ để tìm cách các thay đổi tương tự đã được thực hiện trong quá"
+      },
+      {
+        "id": "func-emergent-integrations-manager-q1",
+        "question": "Công cụ \"emergent_integrations_manager\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Git & Version",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"emergent_integrations_manager\" thuộc danh mục \"Git & Version\". Lấy khóa Emergent LLM để tích hợp llm (openai, anthropic, google)"
+      },
+      {
+        "id": "func--git-diff-q2",
+        "question": "Công cụ \"#Git Diff\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Git & Version",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"#Git Diff\" thuộc danh mục \"Git & Version\". Tính năng ngữ cảnh cho phép Kiro xem các thay đổi git hiện tại. Giúp Kiro hiểu những thay đổi đang c"
+      }
+    ]
+  },
+  {
+    "id": "quiz-function-ai---llm",
+    "type": "function",
+    "category": "AI & LLM",
+    "title": "Quiz: AI & LLM",
+    "questions": [
+      {
+        "id": "func-chat-mode-respond-q0",
+        "question": "Công cụ \"chat_mode_respond\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "AI & LLM",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"chat_mode_respond\" thuộc danh mục \"AI & LLM\". Phản hồi cho câu hỏi của người dùng bằng một phản hồi trò chuyện. Công cụ này nên được sử dụng khi b"
+      },
+      {
+        "id": "func-think-q1",
+        "question": "Công cụ \"think\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "AI & LLM",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"think\" thuộc danh mục \"AI & LLM\". Nghĩ về điều gì đó - thêm suy nghĩ vào nhật ký"
+      },
+      {
+        "id": "func-vision-expert-agent-q2",
+        "question": "Công cụ \"vision_expert_agent\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "AI & LLM",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"vision_expert_agent\" thuộc danh mục \"AI & LLM\". Trợ lý dựa trên AI để chọn và trả về URL hình ảnh liên quan"
+      }
+    ]
+  },
+  {
+    "id": "quiz-function-analysis",
+    "type": "function",
+    "category": "Analysis",
+    "title": "Quiz: Analysis",
+    "questions": [
+      {
+        "id": "func-analyze-file-tool-q0",
+        "question": "Công cụ \"analyze_file_tool\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Analysis",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"analyze_file_tool\" thuộc danh mục \"Analysis\". Phân tích dựa trên AI cho file tài liệu để tìm ra thông tin chi tiết và mẫu dữ liệu"
+      },
+      {
+        "id": "func-mcp-lint-python-q1",
+        "question": "Công cụ \"mcp_lint_python\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Analysis",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"mcp_lint_python\" thuộc danh mục \"Analysis\". Kiểm tra code Python sử dụng ruff"
+      },
+      {
+        "id": "func-mcp-lint-javascript-q2",
+        "question": "Công cụ \"mcp_lint_javascript\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Analysis",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"mcp_lint_javascript\" thuộc danh mục \"Analysis\". Kiểm tra JavaScript/TypeScript sử dụng ESLint"
+      }
+    ]
+  },
+  {
+    "id": "quiz-function-database",
+    "type": "function",
+    "category": "Database",
+    "title": "Quiz: Database",
+    "questions": [
+      {
+        "id": "func-create-database-migration-q0",
+        "question": "Công cụ \"create_database_migration\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Database",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"create_database_migration\" thuộc danh mục \"Database\". Tạo file migration SQL mới cho cơ sở dữ liệu Encore.ts"
+      },
+      {
+        "id": "func-query-data-sources-q1",
+        "question": "Công cụ \"query-data-sources\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Database",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"query-data-sources\" thuộc danh mục \"Database\". Sử dụng query-data-sources để thực hiện truy vấn SQLite trên các trang trong Nguồn dữ liệu hoặc truy"
+      },
+      {
+        "id": "func-create-database-q2",
+        "question": "Công cụ \"create-database\" được sử dụng để làm gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Database",
+            "correct": true
+          },
+          {
+            "text": "Giải trí",
+            "correct": false
+          },
+          {
+            "text": "Đồ họa",
+            "correct": false
+          },
+          {
+            "text": "Âm nhạc",
+            "correct": false
+          }
+        ],
+        "explanation": "\"create-database\" thuộc danh mục \"Database\". Tạo Cơ sở dữ liệu mới.\n\nĐịnh dạng yêu cầu dưới dạng danh sách dấu đầu dòng markdown.\nMỗi yêu cầu nên"
+      }
+    ]
+  }
+]

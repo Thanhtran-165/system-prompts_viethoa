@@ -1,0 +1,385 @@
+{
+  "models": [
+    {
+      "id": "-github",
+      "name": ".github",
+      "category": "Other",
+      "hasPrompt": false,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "amp",
+      "name": "Amp",
+      "category": "Other",
+      "hasPrompt": false,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "category": "Other",
+      "hasPrompt": true,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "augment-code",
+      "name": "Augment Code",
+      "category": "IDE Integrated",
+      "hasPrompt": true,
+      "hasTools": true,
+      "toolCount": 25
+    },
+    {
+      "id": "cluely",
+      "name": "Cluely",
+      "category": "Browser",
+      "hasPrompt": true,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "codebuddy-prompts",
+      "name": "CodeBuddy Prompts",
+      "category": "Other",
+      "hasPrompt": true,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "comet-assistant",
+      "name": "Comet Assistant",
+      "category": "Browser",
+      "hasPrompt": true,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "cursor-prompts",
+      "name": "Cursor Prompts",
+      "category": "IDE Integrated",
+      "hasPrompt": true,
+      "hasTools": true,
+      "toolCount": 13
+    },
+    {
+      "id": "devin-ai",
+      "name": "Devin AI",
+      "category": "Agentic",
+      "hasPrompt": true,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "emergent",
+      "name": "Emergent",
+      "category": "Other",
+      "hasPrompt": true,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "category": "Other",
+      "hasPrompt": false,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "junie",
+      "name": "Junie",
+      "category": "Agentic",
+      "hasPrompt": true,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "kiro",
+      "name": "Kiro",
+      "category": "Other",
+      "hasPrompt": true,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "leap-new",
+      "name": "Leap.new",
+      "category": "Web Builders",
+      "hasPrompt": true,
+      "hasTools": true,
+      "toolCount": 10
+    },
+    {
+      "id": "lovable",
+      "name": "Lovable",
+      "category": "Web Builders",
+      "hasPrompt": true,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "manus-agent-tools---prompt",
+      "name": "Manus Agent Tools & Prompt",
+      "category": "Agentic",
+      "hasPrompt": true,
+      "hasTools": true,
+      "toolCount": 29
+    },
+    {
+      "id": "notionai",
+      "name": "NotionAi",
+      "category": "Knowledge",
+      "hasPrompt": true,
+      "hasTools": true,
+      "toolCount": 8
+    },
+    {
+      "id": "open-source-prompts",
+      "name": "Open Source prompts",
+      "category": "Other",
+      "hasPrompt": false,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "orchids-app",
+      "name": "Orchids.app",
+      "category": "Other",
+      "hasPrompt": true,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "category": "Knowledge",
+      "hasPrompt": true,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "poke",
+      "name": "Poke",
+      "category": "Knowledge",
+      "hasPrompt": true,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "qoder",
+      "name": "Qoder",
+      "category": "IDE Integrated",
+      "hasPrompt": true,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "replit",
+      "name": "Replit",
+      "category": "Other",
+      "hasPrompt": true,
+      "hasTools": true,
+      "toolCount": 18
+    },
+    {
+      "id": "same-dev",
+      "name": "Same.dev",
+      "category": "Web Builders",
+      "hasPrompt": true,
+      "hasTools": true,
+      "toolCount": 16
+    },
+    {
+      "id": "trae",
+      "name": "Trae",
+      "category": "IDE Integrated",
+      "hasPrompt": true,
+      "hasTools": true,
+      "toolCount": 0
+    },
+    {
+      "id": "traycer-ai",
+      "name": "Traycer AI",
+      "category": "IDE Integrated",
+      "hasPrompt": true,
+      "hasTools": true,
+      "toolCount": 0
+    },
+    {
+      "id": "vscode-agent",
+      "name": "VSCode Agent",
+      "category": "IDE Integrated",
+      "hasPrompt": true,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "warp-dev",
+      "name": "Warp.dev",
+      "category": "Other",
+      "hasPrompt": true,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "windsurf",
+      "name": "Windsurf",
+      "category": "IDE Integrated",
+      "hasPrompt": true,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "xcode",
+      "name": "Xcode",
+      "category": "Other",
+      "hasPrompt": true,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "z-ai-code",
+      "name": "Z.ai Code",
+      "category": "Other",
+      "hasPrompt": true,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "dia",
+      "name": "dia",
+      "category": "Other",
+      "hasPrompt": true,
+      "hasTools": false,
+      "toolCount": 0
+    },
+    {
+      "id": "v0-prompts-and-tools",
+      "name": "v0 Prompts and Tools",
+      "category": "Web Builders",
+      "hasPrompt": true,
+      "hasTools": true,
+      "toolCount": 10
+    }
+  ],
+  "categories": {
+    "CLI Coding": [
+      "Claude Code",
+      "Codex CLI",
+      "Gemini CLI"
+    ],
+    "IDE Integrated": [
+      "Cursor",
+      "Windsurf",
+      "Augment Code",
+      "Trae",
+      "VSCode Agent",
+      "Traycer AI",
+      "Qoder"
+    ],
+    "Agentic": [
+      "Devin AI",
+      "Manus Agent Tools & Prompt",
+      "Junie"
+    ],
+    "Web Builders": [
+      "v0 Prompts and Tools",
+      "Lovable",
+      "Same.dev",
+      "Leap.new",
+      "Bolt"
+    ],
+    "Browser": [
+      "Claude for Chrome",
+      "Comet Assistant",
+      "Cluely"
+    ],
+    "Knowledge": [
+      "Perplexity",
+      "NotionAi",
+      "Poke"
+    ],
+    "Open Source": [
+      "Cline",
+      "RooCode",
+      "Lumo"
+    ],
+    "Other": [
+      "Kiro",
+      "Z.ai Code",
+      "Orchids.app",
+      "dia",
+      "Emergent",
+      "CodeBuddy Prompts"
+    ]
+  },
+  "functionCategories": {
+    "File Operations": [
+      "read_file",
+      "view",
+      "list_dir",
+      "ls",
+      "glob",
+      "write_file",
+      "save_file",
+      "edit_file",
+      "str_replace",
+      "delete_file",
+      "remove_file"
+    ],
+    "Code Search": [
+      "grep",
+      "search",
+      "codebase_search",
+      "semantic_search",
+      "find_references",
+      "file_search"
+    ],
+    "Terminal": [
+      "bash",
+      "terminal",
+      "run_cmd",
+      "launch_process",
+      "shell_exec"
+    ],
+    "Web & Browser": [
+      "web_search",
+      "web_fetch",
+      "navigate",
+      "browser",
+      "screenshot",
+      "form_input",
+      "click"
+    ],
+    "Git & Version": [
+      "git",
+      "commit",
+      "diff",
+      "branch"
+    ],
+    "Task Management": [
+      "todo",
+      "task",
+      "plan"
+    ],
+    "Database": [
+      "sql",
+      "database",
+      "query"
+    ],
+    "AI & LLM": [
+      "think",
+      "agent",
+      "llm",
+      "chat"
+    ]
+  },
+  "stats": {
+    "totalModels": 33,
+    "totalFunctions": 123,
+    "totalQuizzes": 36
+  }
+}

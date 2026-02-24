@@ -1,16 +1,16 @@
-# Cách lấy System Prompt cho [Amp](https://ampcode.com)
+# How to obtain the system prompt for [Amp](https://ampcode.com)
 
-1. Đăng nhập với Amp sử dụng VScode
-2. Nhập một truy vấn ngắn vào Amp
-3. Giữ Alt (windows) hoặc Option (macOS) và nhấp vào nút workspace
+1. Login with Amp using VScode
+2. Issue a short query into Amp
+3. Hold down Alt (windows) or Option (macOS) and click on the workspace button
 
 ![](./view-thread-yaml.png)
 
-4. Nhấp vào xem Thread YAML
+4. Click view Thread YAML
 
-# Ghi chú
+# Notes
 
-System prompt được sử dụng bởi Amp được điều chỉnh cho Sonnet 4.x và có các LLM khác được đăng ký vào nó như công cụ ("the oracle"). Để lấy system prompt điều chỉnh `GPT-5` thì bạn cần cấu hình cài đặt người dùng VSCode với các sau và sau đó làm theo các bước trên lại
+The system prompt used by Amp is tuned to Sonnet 4.x and has other LLMs registered into it as tools ("the oracle"). To obtain the `GPT-5` tuned system prompt then you need to configure VSCode user settings with the following and then follow the steps above again
 
 ```json
 {

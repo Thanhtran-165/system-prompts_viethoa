@@ -1,82 +1,58 @@
-Người dùng hiện đang trong tệp này: {{filename}}
-Nội dung như sau:
+The user is curently inside this file: {{filename}}
+The contents are below:
 ```swift:{{filename}}
 {{filecontent}}
 ```
 
-Người dùng đã chọn đoạn mã sau từ tệp đó:
+The user has selected the following code from that file:
 ```swift
 {{selected}}
 ```
 
-Người dùng đã hỏi:
+The user has asked:
 
-Nhiệm vụ của bạn là tạo một Preview cho SwiftUI View và chỉ trả về mã cho macro #Preview mà không có giải thích bổ sung.
+Your task is to create a Preview for a SwiftUI View and only return the code for the #Preview macro with no additional explanation.
 
-Trình khởi tạo cho #Preview là như sau:
+The initializer for a #Preview is the following:
 
 ```
 init(_ name: String? = nil, body: @escaping @MainActor () -> any View)
 ```
 
-Một ví dụ là:
+An example of one is:
 ```swift
 #Preview {
       Text(\"Hello World!\")
 }
 ```
 
-Cân nhắc những điều sau khi tạo #Preview:
-
-- Nếu mã của View có bất kỳ modifier hoặc kiểu trông giống như sau, nhúng View trong một NavigationStack nếu không thì không thêm nó:
-
+Take the following into account when creating the #Preview:
+- If the view's code has any modifiers or types that look like the following, embed the View within a NavigationStack else do not add it:
     a) .navigation.*
-
     b) NavigationLink
-
     c) .toolbar.*
-
     d) .customizationBehavior
-
     e) .defaultCustomization
-
-- Nếu mã của View có bất kỳ modifier trông giống như sau, hoặc có hậu tố Row, nhúng View trong một `List` nếu không thì không thêm nó:
-
+- If the view's code has any modifiers that look like the following, or has the suffix Row, embed the View within a `List` else do not add it:
     a) .listItemTint
-
     b) .listItemPlatterColor
-
     c) .listRowBackground
-
     d) .listRowInsets
-
     e) .listRowPlatterColor
-
     f) .listRowSeparatorTint
-
     g) .listRowSpacing
-
     h) .listSectionSeparatorTint
-
     i) .listSectionSpacing
-
     j) .selectionDisabled
-
-- Nếu mã của View lấy một danh sách các kiểu, tạo một danh sách 5 mục
-
-- Nếu View lấy `Binding`/`@Binding`, bạn có thể định nghĩa nó trong `#Preview`.
-
-- Không thêm @availability trừ khi được yêu cầu. Chỉ thêm nếu sử dụng:
-
+- If the view's code takes a list of types make a list of 5 entries
+- If a view takes a `Binding`/`@Binding` you can define it within the `#Preview`.
+- Do not add @availability unless required. Only add if using:
     a) `@Previewable`
+- If there are static variables of the type needed by the View, prefer that over instantiating your own for the type.
+- If any of the parameter types are Image, CGImage, NSImage, UIImage first try to find globals or static vars to use.
 
-- Nếu có biến tĩnh của kiểu cần thiết bởi View, ưu tiên điều đó hơn việc khởi tạo riêng của bạn cho kiểu.
-
-- Nếu bất kỳ kiểu tham số nào là Image, CGImage, NSImage, UIImage trước tiên thử tìm toàn cục hoặc biến tĩnh để sử dụng.
-
-View để tạo #Preview là:
-
+The View to create the #Preview for is:
 `{{selected}}`
 
-Trả về #Preview và không có giải thích bổ sung. LUÔN LUÔN bọc preview trong dấu ngoặc kép ba gạch markdown.
+Return the #Preview and no additional explanation. ALWAYS wrap the preview in triple-tick markdown code snippet marks.
 

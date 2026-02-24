@@ -1,0 +1,1196 @@
+[
+  {
+    "id": "quiz-model-anthropic",
+    "type": "model",
+    "modelId": "anthropic",
+    "title": "Quiz: Anthropic",
+    "questions": [
+      {
+        "id": "anthropic-q2",
+        "question": "System prompt của Anthropic tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Anthropic là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-augment-code",
+    "type": "model",
+    "modelId": "augment-code",
+    "title": "Quiz: Augment Code",
+    "questions": [
+      {
+        "id": "augment-code-q1",
+        "question": "Augment Code có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "12",
+            "correct": false
+          },
+          {
+            "text": "25",
+            "correct": true
+          },
+          {
+            "text": "37",
+            "correct": false
+          },
+          {
+            "text": "30",
+            "correct": false
+          }
+        ],
+        "explanation": "Augment Code có 25 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "augment-code-q2",
+        "question": "System prompt của Augment Code tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Augment Code là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-cluely",
+    "type": "model",
+    "modelId": "cluely",
+    "title": "Quiz: Cluely",
+    "questions": [
+      {
+        "id": "cluely-q2",
+        "question": "System prompt của Cluely tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Cluely là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-codebuddy-prompts",
+    "type": "model",
+    "modelId": "codebuddy-prompts",
+    "title": "Quiz: CodeBuddy Prompts",
+    "questions": [
+      {
+        "id": "codebuddy-prompts-q2",
+        "question": "System prompt của CodeBuddy Prompts tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "CodeBuddy Prompts là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-comet-assistant",
+    "type": "model",
+    "modelId": "comet-assistant",
+    "title": "Quiz: Comet Assistant",
+    "questions": [
+      {
+        "id": "comet-assistant-q2",
+        "question": "System prompt của Comet Assistant tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Comet Assistant là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-cursor-prompts",
+    "type": "model",
+    "modelId": "cursor-prompts",
+    "title": "Quiz: Cursor Prompts",
+    "questions": [
+      {
+        "id": "cursor-prompts-q1",
+        "question": "Cursor Prompts có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "6",
+            "correct": false
+          },
+          {
+            "text": "13",
+            "correct": true
+          },
+          {
+            "text": "19",
+            "correct": false
+          },
+          {
+            "text": "18",
+            "correct": false
+          }
+        ],
+        "explanation": "Cursor Prompts có 13 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "cursor-prompts-q2",
+        "question": "System prompt của Cursor Prompts tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Cursor Prompts là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-devin-ai",
+    "type": "model",
+    "modelId": "devin-ai",
+    "title": "Quiz: Devin AI",
+    "questions": [
+      {
+        "id": "devin-ai-q2",
+        "question": "System prompt của Devin AI tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Devin AI là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-emergent",
+    "type": "model",
+    "modelId": "emergent",
+    "title": "Quiz: Emergent",
+    "questions": [
+      {
+        "id": "emergent-q2",
+        "question": "System prompt của Emergent tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Emergent là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-junie",
+    "type": "model",
+    "modelId": "junie",
+    "title": "Quiz: Junie",
+    "questions": [
+      {
+        "id": "junie-q2",
+        "question": "System prompt của Junie tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Junie là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-kiro",
+    "type": "model",
+    "modelId": "kiro",
+    "title": "Quiz: Kiro",
+    "questions": [
+      {
+        "id": "kiro-q2",
+        "question": "System prompt của Kiro tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Kiro là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-leap-new",
+    "type": "model",
+    "modelId": "leap-new",
+    "title": "Quiz: Leap.new",
+    "questions": [
+      {
+        "id": "leap-new-q1",
+        "question": "Leap.new có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "5",
+            "correct": false
+          },
+          {
+            "text": "10",
+            "correct": true
+          },
+          {
+            "text": "15",
+            "correct": false
+          },
+          {
+            "text": "15",
+            "correct": false
+          }
+        ],
+        "explanation": "Leap.new có 10 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "leap-new-q2",
+        "question": "System prompt của Leap.new tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Leap.new là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-lovable",
+    "type": "model",
+    "modelId": "lovable",
+    "title": "Quiz: Lovable",
+    "questions": [
+      {
+        "id": "lovable-q2",
+        "question": "System prompt của Lovable tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Lovable là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-manus-agent-tools---prompt",
+    "type": "model",
+    "modelId": "manus-agent-tools---prompt",
+    "title": "Quiz: Manus Agent Tools & Prompt",
+    "questions": [
+      {
+        "id": "manus-agent-tools---prompt-q1",
+        "question": "Manus Agent Tools & Prompt có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "14",
+            "correct": false
+          },
+          {
+            "text": "29",
+            "correct": true
+          },
+          {
+            "text": "43",
+            "correct": false
+          },
+          {
+            "text": "34",
+            "correct": false
+          }
+        ],
+        "explanation": "Manus Agent Tools & Prompt có 29 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "manus-agent-tools---prompt-q2",
+        "question": "System prompt của Manus Agent Tools & Prompt tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Manus Agent Tools & Prompt là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-notionai",
+    "type": "model",
+    "modelId": "notionai",
+    "title": "Quiz: NotionAi",
+    "questions": [
+      {
+        "id": "notionai-q1",
+        "question": "NotionAi có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "4",
+            "correct": false
+          },
+          {
+            "text": "8",
+            "correct": true
+          },
+          {
+            "text": "12",
+            "correct": false
+          },
+          {
+            "text": "13",
+            "correct": false
+          }
+        ],
+        "explanation": "NotionAi có 8 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "notionai-q2",
+        "question": "System prompt của NotionAi tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "NotionAi là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-orchids-app",
+    "type": "model",
+    "modelId": "orchids-app",
+    "title": "Quiz: Orchids.app",
+    "questions": [
+      {
+        "id": "orchids-app-q2",
+        "question": "System prompt của Orchids.app tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Orchids.app là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-perplexity",
+    "type": "model",
+    "modelId": "perplexity",
+    "title": "Quiz: Perplexity",
+    "questions": [
+      {
+        "id": "perplexity-q2",
+        "question": "System prompt của Perplexity tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Perplexity là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-poke",
+    "type": "model",
+    "modelId": "poke",
+    "title": "Quiz: Poke",
+    "questions": [
+      {
+        "id": "poke-q2",
+        "question": "System prompt của Poke tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Poke là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-qoder",
+    "type": "model",
+    "modelId": "qoder",
+    "title": "Quiz: Qoder",
+    "questions": [
+      {
+        "id": "qoder-q2",
+        "question": "System prompt của Qoder tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Qoder là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-replit",
+    "type": "model",
+    "modelId": "replit",
+    "title": "Quiz: Replit",
+    "questions": [
+      {
+        "id": "replit-q1",
+        "question": "Replit có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "9",
+            "correct": false
+          },
+          {
+            "text": "18",
+            "correct": true
+          },
+          {
+            "text": "27",
+            "correct": false
+          },
+          {
+            "text": "23",
+            "correct": false
+          }
+        ],
+        "explanation": "Replit có 18 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "replit-q2",
+        "question": "System prompt của Replit tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Replit là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-same-dev",
+    "type": "model",
+    "modelId": "same-dev",
+    "title": "Quiz: Same.dev",
+    "questions": [
+      {
+        "id": "same-dev-q1",
+        "question": "Same.dev có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "8",
+            "correct": false
+          },
+          {
+            "text": "16",
+            "correct": true
+          },
+          {
+            "text": "24",
+            "correct": false
+          },
+          {
+            "text": "21",
+            "correct": false
+          }
+        ],
+        "explanation": "Same.dev có 16 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "same-dev-q2",
+        "question": "System prompt của Same.dev tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Same.dev là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-trae",
+    "type": "model",
+    "modelId": "trae",
+    "title": "Quiz: Trae",
+    "questions": [
+      {
+        "id": "trae-q2",
+        "question": "System prompt của Trae tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Trae là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-traycer-ai",
+    "type": "model",
+    "modelId": "traycer-ai",
+    "title": "Quiz: Traycer AI",
+    "questions": [
+      {
+        "id": "traycer-ai-q2",
+        "question": "System prompt của Traycer AI tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Traycer AI là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-vscode-agent",
+    "type": "model",
+    "modelId": "vscode-agent",
+    "title": "Quiz: VSCode Agent",
+    "questions": [
+      {
+        "id": "vscode-agent-q2",
+        "question": "System prompt của VSCode Agent tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "VSCode Agent là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-warp-dev",
+    "type": "model",
+    "modelId": "warp-dev",
+    "title": "Quiz: Warp.dev",
+    "questions": [
+      {
+        "id": "warp-dev-q2",
+        "question": "System prompt của Warp.dev tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Warp.dev là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-windsurf",
+    "type": "model",
+    "modelId": "windsurf",
+    "title": "Quiz: Windsurf",
+    "questions": [
+      {
+        "id": "windsurf-q2",
+        "question": "System prompt của Windsurf tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Windsurf là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-xcode",
+    "type": "model",
+    "modelId": "xcode",
+    "title": "Quiz: Xcode",
+    "questions": [
+      {
+        "id": "xcode-q2",
+        "question": "System prompt của Xcode tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Xcode là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-z-ai-code",
+    "type": "model",
+    "modelId": "z-ai-code",
+    "title": "Quiz: Z.ai Code",
+    "questions": [
+      {
+        "id": "z-ai-code-q2",
+        "question": "System prompt của Z.ai Code tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "Z.ai Code là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-dia",
+    "type": "model",
+    "modelId": "dia",
+    "title": "Quiz: dia",
+    "questions": [
+      {
+        "id": "dia-q2",
+        "question": "System prompt của dia tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "dia là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-model-v0-prompts-and-tools",
+    "type": "model",
+    "modelId": "v0-prompts-and-tools",
+    "title": "Quiz: v0 Prompts and Tools",
+    "questions": [
+      {
+        "id": "v0-prompts-and-tools-q1",
+        "question": "v0 Prompts and Tools có bao nhiêu tools chính?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "5",
+            "correct": false
+          },
+          {
+            "text": "10",
+            "correct": true
+          },
+          {
+            "text": "15",
+            "correct": false
+          },
+          {
+            "text": "15",
+            "correct": false
+          }
+        ],
+        "explanation": "v0 Prompts and Tools có 10 tools trong bộ công cụ của mình."
+      },
+      {
+        "id": "v0-prompts-and-tools-q2",
+        "question": "System prompt của v0 Prompts and Tools tập trung vào điều gì?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "Tạo nội dung sáng tạo",
+            "correct": false
+          },
+          {
+            "text": "Hỗ trợ lập trình và kỹ thuật phần mềm",
+            "correct": true
+          },
+          {
+            "text": "Dịch thuật ngôn ngữ",
+            "correct": false
+          },
+          {
+            "text": "Phân tích dữ liệu kinh doanh",
+            "correct": false
+          }
+        ],
+        "explanation": "v0 Prompts and Tools là AI assistant chuyên về lập trình."
+      }
+    ]
+  },
+  {
+    "id": "quiz-function-file-operations",
+    "type": "function",
+    "category": "File Operations",
+    "title": "Quiz: File Operations",
+    "questions": [
+      {
+        "id": "func-view-q0",
+        "question": "Công cụ \"view\" có trong bao nhiêu AI assistants?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "text": "1",
+            "correct": false
+          },
+          {
+            "text": "2",
+            "correct": true
+          },
+          {
+            "text": "4",
+            "correct": false
+          },
+          {
+            "text": "Tất cả",
+            "correct": false
+          }
+        ],
+        "explanation": "\"view\" được implement bởi 2 AI assistants khác nhau."
+      }
+    ]
+  },
+  {
+    "id": "quiz-function-code-search",
+    "type": "function",
+    "category": "Code Search",
+    "title": "Quiz: Code Search",
+    "questions": []
+  },
+  {
+    "id": "quiz-function-other",
+    "type": "function",
+    "category": "Other",
+    "title": "Quiz: Other",
+    "questions": []
+  },
+  {
+    "id": "quiz-function-terminal",
+    "type": "function",
+    "category": "Terminal",
+    "title": "Quiz: Terminal",
+    "questions": []
+  },
+  {
+    "id": "quiz-function-web---browser",
+    "type": "function",
+    "category": "Web & Browser",
+    "title": "Quiz: Web & Browser",
+    "questions": []
+  },
+  {
+    "id": "quiz-function-task-management",
+    "type": "function",
+    "category": "Task Management",
+    "title": "Quiz: Task Management",
+    "questions": []
+  },
+  {
+    "id": "quiz-function-database",
+    "type": "function",
+    "category": "Database",
+    "title": "Quiz: Database",
+    "questions": []
+  }
+]

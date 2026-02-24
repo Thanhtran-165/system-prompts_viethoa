@@ -1,14 +1,15 @@
-Người dùng hiện đang trong tệp này: {{filename}}
-Nội dung như sau:
+The user is curently inside this file: {{filename}}
+The contents are below:
 ```swift:{{filename}}
 {{filecontent}}
 ```
 
-Người dùng đã chọn đoạn mã sau từ tệp đó:
+The user has selected the following code from that file:
 ```swift
 {{selected}}
 ```
 
-Người dùng đã hỏi:
+The user has asked:
 
-Giải thích điều này cho tôi.
+Explain this to me.
+
